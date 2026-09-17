@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { Countdown } from "@/components/Countdown";
 import { type GuessRow, GuessTable } from "@/components/GuessTable";
+import { PuzzlePhoto } from "@/components/PuzzlePhoto";
 import type { CityReveal } from "@/lib/cities";
 import { generateShareText } from "@/lib/game/share";
 
@@ -66,10 +66,11 @@ export function EndScreen({
           : "HELAAS · 6 POGINGEN OP"}
       </h2>
 
-      <div className="puzzle-photo">
-        <Image src={imageUrl} alt={reveal.name} fill sizes="430px" />
-        <p className="puzzle-photo__credit">Foto: {imageCredit.owner}</p>
-      </div>
+      <PuzzlePhoto
+        imageUrl={imageUrl}
+        credit={imageCredit.owner}
+        alt={reveal.name}
+      />
 
       {status === "lost" && (
         <p className="end-screen__lead">Het stadje van vandaag was</p>
