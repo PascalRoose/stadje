@@ -1,0 +1,10 @@
+# Single-project repo, not a real workspace — restrict to the root so pnpm never treats build
+# output (e.g. .next/package.json) as a workspace member.
+packages:
+  - "."
+
+allowBuilds:
+  esbuild: true
+  sharp: false
+  simple-git-hooks: true
+  unrs-resolver: false

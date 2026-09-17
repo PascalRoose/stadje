@@ -1,0 +1,931 @@
+:root {
+  color-scheme: light;
+  --canvas: #e8e2d6;
+  --page: #f2ebdf;
+  --card: #fffcf6;
+  --photo-bg: #e5dccb;
+  --ink: #191512;
+  --ink-45: rgba(25, 21, 18, 0.45);
+  --ink-60: rgba(25, 21, 18, 0.6);
+  --ink-72: rgba(25, 21, 18, 0.72);
+  --border: rgba(25, 21, 18, 0.14);
+  --border-strong: rgba(25, 21, 18, 0.2);
+
+  --green-bg: #2f6b4a;
+  --green-fg: #f2fbf5;
+  --orange-bg: #98590f;
+  --orange-fg: #fff8ee;
+  --red-bg: #a63f2e;
+  --red-fg: #fff6f1;
+  --red-hover: #7d2c1f;
+
+  --dark-btn-bg: #191512;
+  --dark-btn-fg: #f2ebdf;
+
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-sans:
+    var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- Subtle motion ---------- */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    /* Must override every per-component animation/transition declared elsewhere in this file
+       for users who asked for reduced motion — the standard WCAG-recommended pattern. */
+    /* biome-ignore lint/complexity/noImportantStyles: see comment above */
+    animation-duration: 0.001ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: see comment above */
+    animation-iteration-count: 1 !important;
+    /* biome-ignore lint/complexity/noImportantStyles: see comment above */
+    transition-duration: 0.001ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: see comment above */
+    scroll-behavior: auto !important;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--canvas);
+  color: var(--ink);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: var(--red-bg);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+a:hover {
+  color: var(--red-hover);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    opacity 0.15s ease,
+    transform 0.1s ease;
+}
+button:active {
+  transform: scale(0.97);
+}
+
+/* Mobile-first, portrait-locked "phone" frame (FR-023): desktop keeps the same portrait aspect
+   ratio as mobile rather than reflowing wide — the canvas around it just gets wider empty
+   margins, matching the design's own phone-mockup presentation. Full-bleed top-to-bottom, with
+   only side borders (no top/bottom margin, radius, or shadow) — the app always fills the
+   viewport height exactly, no outer page scroll. */
+#app-frame {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+}
+#app-phone {
+  width: 100%;
+  max-width: 430px;
+  height: 100dvh;
+  background: var(--page);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border-left: 1px solid var(--border-strong);
+  border-right: 1px solid var(--border-strong);
+}
+
+.loading {
+  color: var(--ink-60);
+  padding: 24px 18px;
+}
+
+/* ---------- Header ---------- */
+.app-header {
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 18px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.app-header__title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.app-header__title span:first-child {
+  font: 600 17px / 1 var(--font-serif);
+}
+.app-header__date {
+  font: 500 10px / 1 var(--font-mono);
+  letter-spacing: 0.16em;
+  color: var(--ink-60);
+}
+.icon-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--ink);
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+.icon-button:hover {
+  background: var(--card);
+  transform: scale(1.06);
+}
+.icon-button:active {
+  transform: scale(0.94);
+}
+
+/* ---------- Main content area ---------- */
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 18px 32px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  animation: fade-in 0.25s ease both;
+}
+.screen h1 {
+  font-size: 21px;
+}
+.screen h2 {
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+/* ---------- Puzzle photo ---------- */
+.puzzle-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--photo-bg);
+  animation: rise-in 0.35s ease both;
+}
+.puzzle-photo img {
+  object-fit: cover;
+}
+.puzzle-photo__credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 6px 10px;
+  font: 400 11px var(--font-sans);
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.guess-count {
+  align-self: flex-end;
+  font: 700 12px / 1 var(--font-mono);
+  color: var(--ink-60);
+}
+
+/* ---------- Guess input + autocomplete ---------- */
+.guess-input {
+  position: relative;
+}
+.guess-input input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 12px;
+  font: 400 15px var(--font-sans);
+  background: var(--card);
+  color: var(--ink);
+}
+.guess-input input:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+.guess-input__suggestions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 5;
+  box-shadow: 0 8px 20px rgba(25, 21, 18, 0.1);
+  animation: drop-in 0.15s ease both;
+}
+.guess-input__suggestions button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  color: var(--ink);
+  font: 400 14px var(--font-sans);
+}
+.guess-input__suggestions button:last-child {
+  border-bottom: none;
+}
+.guess-input__suggestions button:hover,
+.guess-input__suggestions button:first-child {
+  background: rgba(166, 63, 46, 0.07);
+}
+.guess-input__name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.guess-input__province {
+  flex-shrink: 0;
+  color: var(--ink-60);
+  font-size: 12px;
+}
+
+.error {
+  color: var(--red-bg);
+  font-size: 13px;
+}
+
+/* ---------- Guess table (real <table>, styled as a CSS grid to match the mockup) ---------- */
+.guess-table {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.guess-table thead,
+.guess-table tbody {
+  display: contents;
+}
+.guess-table__row {
+  display: grid;
+  grid-template-columns: 1.3fr 1.15fr 0.68fr 0.92fr;
+  gap: 3px;
+}
+.guess-table__row--header th {
+  font: 500 7px var(--font-mono);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--ink-60);
+  padding: 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.guess-table__row:not(.guess-table__row--header) {
+  animation: rise-in 0.25s ease both;
+}
+.guess-table__row:not(.guess-table__row--header) td {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  font: 400 8px var(--font-sans);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+.guess-table__row:not(.guess-table__row--header) td:nth-child(3) {
+  justify-content: flex-end;
+  text-align: right;
+}
+.guess-table__row td[data-tier="green"] {
+  background: var(--green-bg);
+  border-color: var(--green-bg);
+  color: var(--green-fg);
+  font-weight: 600;
+}
+.guess-table__row td[data-tier="orange"] {
+  background: var(--orange-bg);
+  border-color: var(--orange-bg);
+  color: var(--orange-fg);
+}
+.guess-table__row td[data-tier="red"] {
+  background: var(--red-bg);
+  border-color: var(--red-bg);
+  color: var(--red-fg);
+}
+.next-puzzle-note {
+  text-align: center;
+  font: 400 12px var(--font-serif);
+  font-style: italic;
+  color: var(--ink-60);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  padding: 0 18px;
+  border-radius: 11px;
+  font: 600 14px var(--font-sans);
+  border: none;
+}
+.btn-primary {
+  background: var(--dark-btn-bg);
+  color: var(--dark-btn-fg);
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--ink);
+}
+.btn-outline:hover {
+  background: var(--card);
+}
+
+/* ---------- End screen ---------- */
+.end-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.end-screen h2 {
+  font: 700 13px var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.end-screen[data-status="won"] h2 {
+  color: var(--green-bg);
+}
+.end-screen[data-status="lost"] h2 {
+  color: var(--red-bg);
+}
+.end-screen__lead {
+  font: 400 13px var(--font-serif);
+  font-style: italic;
+  color: var(--ink-60);
+}
+.end-screen__answer {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--ink-72);
+}
+.end-screen__answer strong {
+  font: 600 34px / 1.05 var(--font-serif);
+  display: block;
+  color: var(--ink);
+  margin-bottom: 4px;
+  animation: pop-in 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.end-screen__wikipedia {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 11px;
+  background: transparent;
+  color: var(--ink);
+  font: 600 13px var(--font-sans);
+}
+.end-screen__wikipedia:hover {
+  background: var(--card);
+  color: var(--ink);
+}
+
+.end-screen__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.end-screen__stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+}
+.end-screen__stats dt {
+  order: 2;
+  font: 500 10px var(--font-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+}
+.end-screen__stats dd {
+  order: 1;
+  margin: 0;
+  font: 600 19px var(--font-serif);
+}
+.end-screen__stats div:nth-child(3) dd {
+  color: var(--green-bg);
+}
+
+.end-screen__share {
+  height: 46px;
+  border-radius: 11px;
+  border: none;
+  background: var(--dark-btn-bg);
+  color: var(--dark-btn-fg);
+  font: 600 14px var(--font-sans);
+}
+.end-screen__share:hover {
+  opacity: 0.9;
+}
+
+.countdown {
+  text-align: center;
+  font: 400 12px var(--font-serif);
+  font-style: italic;
+  color: var(--ink-60);
+}
+
+/* ---------- Stat tiles (stats page, about page) ---------- */
+.stats-page__grid,
+.about-page__world-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.stats-page__grid > div,
+.about-page__world-stats > div {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.stats-page__grid dt,
+.about-page__world-stats dt {
+  order: 2;
+  font: 500 10px var(--font-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+}
+.stats-page__grid dd,
+.about-page__world-stats dd {
+  order: 1;
+  margin: 0;
+  font: 600 19px var(--font-serif);
+}
+
+.stats-page__distribution {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.stats-page__distribution li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.stats-page__provinces {
+  font-size: 13px;
+  color: var(--ink-72);
+}
+
+/* ---------- Archive ---------- */
+.archive-page__filters {
+  display: flex;
+  gap: 6px;
+}
+.pill {
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--page);
+  font: 500 12px var(--font-sans);
+  color: var(--ink);
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+.pill[data-active="true"] {
+  background: var(--dark-btn-bg);
+  border-color: var(--dark-btn-bg);
+  color: var(--dark-btn-fg);
+}
+.archive-page__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.archive-page__list li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 11px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.archive-page__list li a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(25, 21, 18, 0.08);
+}
+.archive-page__list li a:active {
+  transform: translateY(0);
+}
+.archive-page__list li a > span:first-child {
+  font: 500 14px var(--font-sans);
+}
+.archive-page__list li a > span:last-child {
+  margin-left: auto;
+  font: 600 12px var(--font-mono);
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--border);
+}
+.archive-page__list li a > span[data-tier="green"] {
+  background: var(--green-bg);
+  color: var(--green-fg);
+}
+.archive-page__list li a > span[data-tier="red"] {
+  background: var(--red-bg);
+  color: var(--red-fg);
+}
+.archive-page__list li a > .pill {
+  margin-left: auto;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+.archive-page__footer {
+  color: var(--ink-60);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ---------- Nav menu: slide-over drawer with scrim ---------- */
+.nav-menu__scrim {
+  position: fixed;
+  inset: 0;
+  border: none;
+  padding: 0;
+  background: rgba(25, 21, 18, 0.45);
+  z-index: 20;
+  animation: fade-in 0.2s ease both;
+}
+.nav-menu__panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(320px, 85vw);
+  background: var(--card);
+  z-index: 21;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 8px;
+  box-shadow: -14px 0 40px rgba(25, 21, 18, 0.28);
+  animation: slide-in-right 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.nav-menu__links {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.nav-menu__links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  font: 500 15px var(--font-sans);
+}
+.nav-menu__links a::after {
+  content: "→";
+  color: var(--ink-60);
+}
+.nav-menu__links a:last-of-type {
+  border-bottom: none;
+}
+.nav-menu__footer {
+  margin-top: auto;
+  padding: 18px 14px 10px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.nav-menu__credit {
+  margin: 0;
+  text-align: center;
+  font: 400 12px var(--font-serif);
+  font-style: italic;
+  color: var(--ink-60);
+}
+.nav-menu__github {
+  width: 100%;
+  gap: 8px;
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+.nav-menu__github:hover {
+  background: #242424;
+  border-color: #242424;
+  color: #fff;
+}
+.nav-menu__github-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* ---------- Consent banner: bottom sheet ---------- */
+.consent-banner__scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(25, 21, 18, 0.35);
+  pointer-events: none;
+  animation: fade-in 0.25s ease both;
+}
+.consent-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 31;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -14px 34px rgba(25, 21, 18, 0.18);
+  border-radius: 16px 16px 0 0;
+  padding: 20px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 430px;
+  margin: 0 auto;
+  animation: sheet-up 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.consent-banner h2 {
+  font-size: 17px;
+}
+.consent-banner p {
+  font-size: 13px;
+  color: var(--ink-72);
+}
+.consent-banner__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+.consent-banner__actions button {
+  flex: 1;
+}
+.consent-banner__links {
+  font-size: 12px;
+  color: var(--ink-60);
+}
+
+/* ---------- Settings toggle switch ---------- */
+.settings-page__toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.settings-page__toggle input[type="checkbox"] {
+  appearance: none;
+  width: 46px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(25, 21, 18, 0.18);
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.settings-page__toggle input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--card);
+  transition: left 0.15s ease;
+}
+.settings-page__toggle input[type="checkbox"]:checked {
+  background: var(--green-bg);
+}
+.settings-page__toggle input[type="checkbox"]:checked::before {
+  left: 21px;
+}
+.settings-page__toggle-label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font: 500 14px var(--font-sans);
+}
+.settings-page__hint {
+  color: var(--ink-60);
+  font-size: 12px;
+}
+.settings-page__info {
+  font-size: 13px;
+  color: var(--ink-72);
+}
+.settings-page__links {
+  display: flex;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+/* ---------- Generic prose pages (privacy/terms/about/how-it-works) ---------- */
+.privacy-page,
+.terms-page,
+.how-it-works,
+.about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.privacy-page section,
+.terms-page section,
+.how-it-works section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.privacy-page h2,
+.terms-page h2,
+.how-it-works h2 {
+  font-size: 15px;
+}
+.privacy-page p,
+.terms-page p,
+.how-it-works p,
+.about-page p {
+  font-size: 14px;
+  color: var(--ink-72);
+  line-height: 1.5;
+}
+.privacy-page__updated {
+  font: 500 10px var(--font-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+}
+.about-page__sources,
+.about-page__credit {
+  font-size: 12px;
+  color: var(--ink-60);
+}
+
+/* High contrast (FR-020): stronger borders and darker text. */
+:root[data-high-contrast="true"] {
+  --border: rgba(0, 0, 0, 0.6);
+  --border-strong: rgba(0, 0, 0, 0.75);
+  --ink-60: var(--ink);
+  --ink-72: var(--ink);
+}
+:root[data-high-contrast="true"] #app-phone {
+  background: #fff;
+}
+:root[data-high-contrast="true"]
+  .guess-table__row:not(.guess-table__row--header)
+  td:not([data-tier]) {
+  background: #fff;
+}
