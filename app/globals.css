@@ -771,14 +771,14 @@ button:active {
 }
 
 /* ---------- Consent banner: bottom sheet ---------- */
-.consent-banner__scrim {
-  position: fixed;
-  inset: 0;
-  z-index: 30;
-  background: rgba(25, 21, 18, 0.35);
-  pointer-events: none;
-  animation: fade-in 0.25s ease both;
-}
+/*
+ * The page-dimming backdrop is a box-shadow spread on this element itself, not a separate
+ * sibling overlay div. A backdrop-as-sibling can be left behind — still dimming the page — by a
+ * cookie-banner-blocking browser extension that only recognizes and removes this dialog element;
+ * tying the dimming to this element's own box-shadow guarantees it disappears the instant this
+ * element does, however the extension identifies and removes it. box-shadow spread never affects
+ * the page's scrollable area, so this needs no `overflow: hidden` on any ancestor.
+ */
 .consent-banner {
   position: fixed;
   left: 0;
@@ -787,7 +787,9 @@ button:active {
   z-index: 31;
   background: var(--card);
   border-top: 1px solid var(--border);
-  box-shadow: 0 -14px 34px rgba(25, 21, 18, 0.18);
+  box-shadow:
+    0 -14px 34px rgba(25, 21, 18, 0.18),
+    0 0 0 100vmax rgba(25, 21, 18, 0.35);
   border-radius: 16px 16px 0 0;
   padding: 20px 18px 24px;
   display: flex;
