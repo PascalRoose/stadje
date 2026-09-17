@@ -1,0 +1,30 @@
+name: Data correction
+description: A city name, province, population figure, photo, or credit is wrong.
+labels: [data]
+body:
+  - type: input
+    id: city
+    attributes:
+      label: City
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: What's wrong?
+      options:
+        - City or alias name
+        - Province
+        - Population figure
+        - Photo
+        - Photo credit / license
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What's wrong, and what should it say instead? A source link helps (e.g. CBS or Wikimedia Commons).
+    validations:
+      required: true

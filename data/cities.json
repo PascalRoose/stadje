@@ -1,0 +1,3028 @@
+[
+  {
+    "name": "'s-Hertogenbosch",
+    "aliases": ["Den Bosch"],
+    "province": "Noord-Brabant",
+    "population": 114323,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/%27s-Hertogenbosch_-_Panorama_-_Gezicht_op_Sint_Jan_vanaf_Sint_Jacobskerktoren_-_RCE.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:%27s-Hertogenbosch_-_Panorama_-_Gezicht_op_Sint_Jan_vanaf_Sint_Jacobskerktoren_-_RCE.jpg",
+      "owner": "Paul van Galen",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/%27s-Hertogenbosch",
+    "longitude": 5.303116,
+    "latitude": 51.6889387
+  },
+  {
+    "name": "Alkmaar",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 94260,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Alkmaar_-_Bierkade_zaterdagochtend.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Alkmaar_-_Bierkade_zaterdagochtend.jpg",
+      "owner": "A. Bakker",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Alkmaar",
+    "longitude": 4.8170994,
+    "latitude": 52.6008538
+  },
+  {
+    "name": "Almelo",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 75166,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Koornmarkt_Almelo.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Koornmarkt_Almelo.JPG",
+      "owner": "Tubantia",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Almelo",
+    "longitude": 6.6636219,
+    "latitude": 52.3563585
+  },
+  {
+    "name": "Almere",
+    "aliases": [],
+    "province": "Flevoland",
+    "population": 232619,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Skyline_Almere.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Skyline_Almere.jpg",
+      "owner": "Bart Winkelhuijzen",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Almere",
+    "longitude": 5.2093149,
+    "latitude": 52.4417588
+  },
+  {
+    "name": "Alphen aan den Rijn",
+    "aliases": ["Alphen"],
+    "province": "Zuid-Holland",
+    "population": 76071,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Raadhuis_Alphen_aan_den_Rijn.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Raadhuis_Alphen_aan_den_Rijn.jpg",
+      "owner": "Goodness Shamrock",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Alphen_aan_den_Rijn_(plaats)",
+    "longitude": 4.6408057,
+    "latitude": 52.1130693
+  },
+  {
+    "name": "Amersfoort",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 148439,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Amersfoort_Zuidsingel.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Amersfoort_Zuidsingel.JPG",
+      "owner": "Torsade de Pointes",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Amersfoort",
+    "longitude": 5.4088845,
+    "latitude": 52.1637703
+  },
+  {
+    "name": "Amsterdam",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 941927,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png",
+      "owner": "Andrés Barrios",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Amsterdam",
+    "longitude": 4.8924534,
+    "latitude": 52.3730796
+  },
+  {
+    "name": "Apeldoorn",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 142716,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Oranjepark01_Apeldoorn.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Oranjepark01_Apeldoorn.jpg",
+      "owner": "Kleinleugenmors",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Apeldoorn_(stad)",
+    "longitude": 5.9300775,
+    "latitude": 52.1795738
+  },
+  {
+    "name": "Appingedam",
+    "aliases": [],
+    "province": "Groningen",
+    "population": 10769,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/InZicht_Appingedam_006.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:InZicht_Appingedam_006.JPG",
+      "owner": "Microtoerisme",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Appingedam",
+    "longitude": 6.8577654,
+    "latitude": 53.3203563
+  },
+  {
+    "name": "Arnemuiden",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 5153,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/ErremuNieuwbouw.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:ErremuNieuwbouw.jpg",
+      "owner": "Steinbach",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Arnemuiden",
+    "longitude": 3.6762457,
+    "latitude": 51.5000009
+  },
+  {
+    "name": "Arnhem",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 171822,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Arnhem_Blick_von_der_Grote_Kerk_Sint_Eusebius_04.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Arnhem_Blick_von_der_Grote_Kerk_Sint_Eusebius_04.jpg",
+      "owner": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Arnhem",
+    "longitude": 5.8762345,
+    "latitude": 52.0056642
+  },
+  {
+    "name": "Assen",
+    "aliases": [],
+    "province": "Drenthe",
+    "population": 70769,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/AssenMarkt.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG",
+      "owner": "Niels Elgaard Larsen",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Assen",
+    "longitude": 6.560498,
+    "latitude": 52.9952273
+  },
+  {
+    "name": "Baarn",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 25435,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Het_kasteel_op_het_landgoed_Groeneveld_te_Baarn._Links_oragerie.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Het_kasteel_op_het_landgoed_Groeneveld_te_Baarn._Links_oragerie.JPG",
+      "owner": "Tineke Visser",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Baarn",
+    "longitude": 5.2931841,
+    "latitude": 52.2111182
+  },
+  {
+    "name": "Bergen op Zoom",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 56094,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Bergen_op_zoom_001.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Bergen_op_zoom_001.jpg",
+      "owner": "M.Minderhoud",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Bergen_op_Zoom",
+    "longitude": 4.2871541,
+    "latitude": 51.4944756
+  },
+  {
+    "name": "Biddinghuizen",
+    "aliases": [],
+    "province": "Flevoland",
+    "population": 7344,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/8256_Biddinghuizen%2C_Netherlands_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:8256_Biddinghuizen,_Netherlands_-_panoramio.jpg",
+      "owner": "L-BBE",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Biddinghuizen",
+    "longitude": 5.6921598,
+    "latitude": 52.4552216
+  },
+  {
+    "name": "Blokzijl",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 1387,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Blokzijl%2C_de_Havenkolk_vanaf_de_Zuiderkade_met_zicht_op_de_Bierkade_en_de_Hervormde_kerk_%28RM10448%29_en_de_Zeedijk_IMG_2834_2018-04-20_14.49.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Blokzijl,_de_Havenkolk_vanaf_de_Zuiderkade_met_zicht_op_de_Bierkade_en_de_Hervormde_kerk_(RM10448)_en_de_Zeedijk_IMG_2834_2018-04-20_14.49.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Blokzijl",
+    "longitude": 5.9614191,
+    "latitude": 52.7261494
+  },
+  {
+    "name": "Bolsward",
+    "aliases": ["Boalsert"],
+    "province": "Friesland",
+    "population": 9963,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Stadhuis_Bolsward_01.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Stadhuis_Bolsward_01.JPG",
+      "owner": "Udo Ockema",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Bolsward",
+    "longitude": 5.5228964,
+    "latitude": 53.0620178
+  },
+  {
+    "name": "Borculo",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 7911,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Borculo%2C_de_Joriskerk_RM9881_foto6_2015-08-22_17.59.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Borculo,_de_Joriskerk_RM9881_foto6_2015-08-22_17.59.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Borculo",
+    "longitude": 6.5180361,
+    "latitude": 52.114854
+  },
+  {
+    "name": "Boxtel",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 27320,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Boxtel_P1040881.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Boxtel_P1040881.JPG",
+      "owner": "G.Lanting",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Boxtel_(plaats)",
+    "longitude": 5.3157954,
+    "latitude": 51.5890603
+  },
+  {
+    "name": "Breda",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 155060,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/2010-05-21-breda-by-RalfR-06.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:2010-05-21-breda-by-RalfR-06.jpg",
+      "owner": "Ralf Roletschek",
+      "license": "GFDL 1.2"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Breda",
+    "longitude": 4.7760237,
+    "latitude": 51.5887845
+  },
+  {
+    "name": "Bredevoort",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 1456,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bredevoort_Joriskerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Bredevoort_Joriskerk.jpg",
+      "owner": "Yhoitink",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Bredevoort",
+    "longitude": 6.6181276,
+    "latitude": 51.943829
+  },
+  {
+    "name": "Bronkhorst",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 129,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Bronkhorst%2C_kapel_RM34548_IMG_3927_2020-03-31_15.59.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Bronkhorst,_kapel_RM34548_IMG_3927_2020-03-31_15.59.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Bronkhorst_(Gelderland)",
+    "longitude": 6.1790966,
+    "latitude": 52.0761252
+  },
+  {
+    "name": "Bunschoten",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 22905,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/De_Hoop_%28Bunschoten%29_9.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:De_Hoop_(Bunschoten)_9.JPG",
+      "owner": "Silver Spoon",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Bunschoten",
+    "longitude": 5.3571571,
+    "latitude": 52.2466546
+  },
+  {
+    "name": "Buren",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 28095,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Panorama_Buren.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Panorama_Buren.JPG",
+      "owner": "Arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Buren_(stad)",
+    "longitude": 5.4200002,
+    "latitude": 51.929637
+  },
+  {
+    "name": "Coevorden",
+    "aliases": [],
+    "province": "Drenthe",
+    "population": 15912,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Het_kasteel_en_het_gemeentehuis_-_Coevorden_-_20410111_-_RCE.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Het_kasteel_en_het_gemeentehuis_-_Coevorden_-_20410111_-_RCE.jpg",
+      "owner": "Jan van Galen",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Coevorden_(stad)",
+    "longitude": 6.7407359,
+    "latitude": 52.6612281
+  },
+  {
+    "name": "Culemborg",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 30413,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Martktplein_culemborg.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Martktplein_culemborg.JPG",
+      "owner": "Arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Culemborg",
+    "longitude": 5.2092152,
+    "latitude": 51.9493315
+  },
+  {
+    "name": "Delft",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 110089,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Delft_Blick_von_der_Nieuwe_Kerk_auf_die_Oude_Kerk_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Delft_Blick_von_der_Nieuwe_Kerk_auf_die_Oude_Kerk_1.jpg",
+      "owner": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Delft",
+    "longitude": 4.35839,
+    "latitude": 52.0114017
+  },
+  {
+    "name": "Delfzijl",
+    "aliases": [],
+    "province": "Groningen",
+    "population": 15242,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Zicht_op_Delfzijl1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg",
+      "owner": "Gouwenaar",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Delfzijl",
+    "longitude": 6.9135144,
+    "latitude": 53.3325644
+  },
+  {
+    "name": "Den Haag",
+    "aliases": ["The Hague", "'s-Gravenhage"],
+    "province": "Zuid-Holland",
+    "population": 569468,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Den_Haag_Skyline_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Den_Haag_Skyline_1.jpg",
+      "owner": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Den_Haag",
+    "longitude": 4.3113461,
+    "latitude": 52.0799838
+  },
+  {
+    "name": "Den Helder",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 40755,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Den_Helder%2C_watertoren_2006-08-06_10.28.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Den_Helder,_watertoren_2006-08-06_10.28.JPG",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Den_Helder",
+    "longitude": 4.760279,
+    "latitude": 52.957976
+  },
+  {
+    "name": "Deventer",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 84951,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Deventer_Lebuiniskerk.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Deventer_Lebuiniskerk.JPG",
+      "owner": "Reinoudkleijberg",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Deventer",
+    "longitude": 6.2364886,
+    "latitude": 52.2694897
+  },
+  {
+    "name": "Dieren",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 13370,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Dieren%2C_Schweer_bey_der_Beckehof_RM519414_foto4_2014-03-10_12.44.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Dieren,_Schweer_bey_der_Beckehof_RM519414_foto4_2014-03-10_12.44.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Dieren_(Gelderland)",
+    "longitude": 6.1014431,
+    "latitude": 52.0526703
+  },
+  {
+    "name": "Doetinchem",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 47637,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Doetinchem%2C_Sint_Catharinakerk_RM13084_in_straatzicht_foto7_2012-07-22_14.54.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Doetinchem,_Sint_Catharinakerk_RM13084_in_straatzicht_foto7_2012-07-22_14.54.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Doetinchem_(stad)",
+    "longitude": 6.2814551,
+    "latitude": 51.9585348
+  },
+  {
+    "name": "Dokkum",
+    "aliases": [],
+    "province": "Friesland",
+    "population": 13040,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Dokkum%2C_stadhuis.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Dokkum,_stadhuis.jpg",
+      "owner": "Bouwe Brouwer",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Dokkum",
+    "longitude": 5.9992306,
+    "latitude": 53.3243515
+  },
+  {
+    "name": "Dordrecht",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 122991,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Augustijnenkamp%2C_3311_Dordrecht%2C_Netherlands_-_panoramio_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Augustijnenkamp,_3311_Dordrecht,_Netherlands_-_panoramio_(2).jpg",
+      "owner": "Ben Bender",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Dordrecht",
+    "longitude": 4.6867891,
+    "latitude": 51.7689546
+  },
+  {
+    "name": "Echt",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 15220,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Kerk_in_Echt.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Kerk_in_Echt.jpg",
+      "owner": "Bumperke",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Echt_(Limburg)",
+    "longitude": 5.8719765,
+    "latitude": 51.1073016
+  },
+  {
+    "name": "Edam",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 7251,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Panorama_Edam.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Panorama_Edam.JPG",
+      "owner": "Arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Edam",
+    "longitude": 5.0562845,
+    "latitude": 52.5119116
+  },
+  {
+    "name": "Ede",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 82545,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ede%2C_straatzicht_vanaf_het_Maanderplein_met_smeedijzeren_gaslantaarn_RM523577_IMG_0516_2019-07-24_10.50.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Ede,_straatzicht_vanaf_het_Maanderplein_met_smeedijzeren_gaslantaarn_RM523577_IMG_0516_2019-07-24_10.50.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Ede_(Nederland)",
+    "longitude": 5.7455106,
+    "latitude": 52.0716826
+  },
+  {
+    "name": "Eemnes",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 10065,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Zicht_op_Eemnes3.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Zicht_op_Eemnes3.jpg",
+      "owner": "Gouwenaar",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Eemnes",
+    "longitude": 5.286071,
+    "latitude": 52.2547415
+  },
+  {
+    "name": "Eindhoven",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 249783,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hoogbouw_Eindhoven_overzicht.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Hoogbouw_Eindhoven_overzicht.jpg",
+      "owner": "Patrick Dolmans",
+      "license": "CC BY 2.5 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Eindhoven",
+    "longitude": 5.4501225,
+    "latitude": 51.4485569
+  },
+  {
+    "name": "Elburg",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 12642,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Elburg_%28Nederland%29_-_stadszicht_2008.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Elburg_(Nederland)_-_stadszicht_2008.jpg",
+      "owner": "Spotter2",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Elburg_(stad)",
+    "longitude": 5.8413217,
+    "latitude": 52.4156591
+  },
+  {
+    "name": "Emmeloord",
+    "aliases": [],
+    "province": "Flevoland",
+    "population": 28099,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Emmeloord%2C_straatzicht_Beursstraat-De_Deel_foto1_2013-04-28_15.04.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Emmeloord,_straatzicht_Beursstraat-De_Deel_foto1_2013-04-28_15.04.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Emmeloord",
+    "longitude": 5.7466367,
+    "latitude": 52.7087448
+  },
+  {
+    "name": "Emmen",
+    "aliases": [],
+    "province": "Drenthe",
+    "population": 59346,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Centrum_Emmen_2021.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Centrum_Emmen_2021.jpg",
+      "owner": "Richard Broekhuijzen",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Emmen_(Drenthe)",
+    "longitude": 6.9525135,
+    "latitude": 52.7528662
+  },
+  {
+    "name": "Enkhuizen",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 18738,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/00_0493_Drommedaris_-_Enkhuizen.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:00_0493_Drommedaris_-_Enkhuizen.jpg",
+      "owner": "W. Bulach",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Enkhuizen",
+    "longitude": 5.2901222,
+    "latitude": 52.7036282
+  },
+  {
+    "name": "Enschede",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 162683,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Enschede%2C_binnenstad.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Enschede,_binnenstad.jpg",
+      "owner": "Kleuske",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Enschede",
+    "longitude": 6.8940537,
+    "latitude": 52.2209855
+  },
+  {
+    "name": "Franeker",
+    "aliases": ["Frjentsjer"],
+    "province": "Friesland",
+    "population": 13361,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Franeker%2C_het_stadhuis_RM15724_en_het_Planetarium_RM15668_foto4_2017-06-18_11.19.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Franeker,_het_stadhuis_RM15724_en_het_Planetarium_RM15668_foto4_2017-06-18_11.19.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Franeker",
+    "longitude": 5.5409648,
+    "latitude": 53.1880505
+  },
+  {
+    "name": "Geertruidenberg",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 7107,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Markt_-_stadhuis_-_Geertruidenberg.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Markt_-_stadhuis_-_Geertruidenberg.jpg",
+      "owner": "Michiel1972",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Geertruidenberg_(plaats)",
+    "longitude": 4.8778438,
+    "latitude": 51.6961662
+  },
+  {
+    "name": "Geldrop",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 29296,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Kasteel_Geldrop.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Kasteel_Geldrop.jpg",
+      "owner": "Reval",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Geldrop",
+    "longitude": 5.5607546,
+    "latitude": 51.4226684
+  },
+  {
+    "name": "Geleen",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 31192,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Krawinkel%2C_Rijksweg_Zuid_222.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Krawinkel,_Rijksweg_Zuid_222.jpg",
+      "owner": "Tibor",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Geleen",
+    "longitude": 5.8267029,
+    "latitude": 50.9699953
+  },
+  {
+    "name": "Gendt",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 7496,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Church_of_Gendt.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Church_of_Gendt.jpg",
+      "owner": "Lendskaip",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Gendt",
+    "longitude": 5.9707861,
+    "latitude": 51.8800155
+  },
+  {
+    "name": "Genemuiden",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 10582,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Zwarte-Water%2C_haveningang_Genemuiden.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Zwarte-Water,_haveningang_Genemuiden.JPG",
+      "owner": "H.P.Burger",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Genemuiden",
+    "longitude": 6.0424311,
+    "latitude": 52.6228834
+  },
+  {
+    "name": "Gennep",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 9506,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Gennep_vanuit_toren.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Gennep_vanuit_toren.jpg",
+      "owner": "Looi",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Gennep_(plaats)",
+    "longitude": 5.9945308,
+    "latitude": 51.6959714
+  },
+  {
+    "name": "Goes",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 29995,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Turfkade_%28Goes%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Turfkade_(Goes).jpg",
+      "owner": "Chris06",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Goes",
+    "longitude": 3.8897596,
+    "latitude": 51.5031033
+  },
+  {
+    "name": "Gorinchem",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 39060,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Gorinchem_011.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Gorinchem_011.jpg",
+      "owner": "Michiel1972",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Gorinchem",
+    "longitude": 4.9738743,
+    "latitude": 51.8296133
+  },
+  {
+    "name": "Gouda",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 77818,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/13-06-27-gouda-by-RalfR-054.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:13-06-27-gouda-by-RalfR-054.jpg",
+      "owner": "Ralf Roletschek",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Gouda",
+    "longitude": 4.7106094,
+    "latitude": 52.0114922
+  },
+  {
+    "name": "Grave",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 8685,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/De_Hampoort_stadspoort_1688_Grave_Noord-Brabant.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:De_Hampoort_stadspoort_1688_Grave_Noord-Brabant.jpg",
+      "owner": "Roger Veringmeier",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Grave_(plaats)",
+    "longitude": 5.7411125,
+    "latitude": 51.7596504
+  },
+  {
+    "name": "Groenlo",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 10032,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Groenlo%2C_kerk1_en_3_foto2_2010-07-18_16.59.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Groenlo,_kerk1_en_3_foto2_2010-07-18_16.59.JPG",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Groenlo",
+    "longitude": 6.6170412,
+    "latitude": 52.0425903
+  },
+  {
+    "name": "Groningen",
+    "aliases": [],
+    "province": "Groningen",
+    "population": 211390,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Martinitoren%2C_Grote_Markt_Groningen.webp?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Martinitoren,_Grote_Markt_Groningen.webp",
+      "owner": "JAHensens",
+      "license": "CC BY 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Groningen_(stad)",
+    "longitude": 6.5680077,
+    "latitude": 53.2190652
+  },
+  {
+    "name": "Haarlem",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 168898,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/HaarlemGroteMarkt1.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:HaarlemGroteMarkt1.JPG",
+      "owner": "Fryslan0109",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Haarlem",
+    "longitude": 4.6435679,
+    "latitude": 52.3837281
+  },
+  {
+    "name": "Haastrecht",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 4376,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Netherlands%2C_Haastrecht_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Netherlands,_Haastrecht_(1).JPG",
+      "owner": "Vincent van Zeijst",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Haastrecht",
+    "longitude": 4.7740369,
+    "latitude": 52.0007892
+  },
+  {
+    "name": "Hagestein",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 1524,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Hagestein_bij_Vianen.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Hagestein_bij_Vianen.jpg",
+      "owner": "Jan dijkstra",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hagestein",
+    "longitude": 5.1220284,
+    "latitude": 51.9810496
+  },
+  {
+    "name": "Hardenberg",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 20920,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Voormalig_hoofdkantoor_van_de_Dedemsvaartsche_Stoomtramweg-Maatschappij_in_Dedemsvaart.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Voormalig_hoofdkantoor_van_de_Dedemsvaartsche_Stoomtramweg-Maatschappij_in_Dedemsvaart.jpg",
+      "owner": "Roepers",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hardenberg_(stad)",
+    "longitude": 6.6188242,
+    "latitude": 52.5754706
+  },
+  {
+    "name": "Harderwijk",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 47068,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Harderwijk%2C_stadszicht_vanaf_het_Zeepad_IMG_4332_2018-06-27_15.00.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Harderwijk,_stadszicht_vanaf_het_Zeepad_IMG_4332_2018-06-27_15.00.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Harderwijk",
+    "longitude": 5.618933,
+    "latitude": 52.3490693
+  },
+  {
+    "name": "Harlingen",
+    "aliases": ["Harns"],
+    "province": "Friesland",
+    "population": 15151,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Nordholland_Harlingen_2004_003a.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Nordholland_Harlingen_2004_003a.jpg",
+      "owner": "S.Möller",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Harlingen_(stad)",
+    "longitude": 5.4141998,
+    "latitude": 53.1752103
+  },
+  {
+    "name": "Hasselt",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 7972,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/20131022_Zicht_op_Hasselt1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:20131022_Zicht_op_Hasselt1.jpg",
+      "owner": "Gouwenaar",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hasselt_(Overijssel)",
+    "longitude": 6.0956717,
+    "latitude": 52.5914949
+  },
+  {
+    "name": "Hattem",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 12822,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Hattem_275.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Hattem_275.JPG",
+      "owner": "arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hattem",
+    "longitude": 6.0619133,
+    "latitude": 52.4767117
+  },
+  {
+    "name": "Heerhugowaard",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 62318,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Heilig_Hart_van_Jezus_kerk_Dessing_De_Noord.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Heilig_Hart_van_Jezus_kerk_Dessing_De_Noord.JPG",
+      "owner": "Brbbl",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Heerhugowaard",
+    "longitude": 4.8326672,
+    "latitude": 52.6631484
+  },
+  {
+    "name": "Heerlen",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 69029,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/2025_Heerlen%2C_Pancratiusplein_%2802%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:2025_Heerlen,_Pancratiusplein_(02).jpg",
+      "owner": "Kleon3",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Heerlen",
+    "longitude": 5.9815066,
+    "latitude": 50.8775239
+  },
+  {
+    "name": "Helmond",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 96860,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Kasteel_Helmond_rechtsom_rond_06%2C_zuidzijde_%28achterkant%29.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Kasteel_Helmond_rechtsom_rond_06,_zuidzijde_(achterkant).JPG",
+      "owner": "Havang(nl)",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Helmond",
+    "longitude": 5.6557686,
+    "latitude": 51.4790956
+  },
+  {
+    "name": "Hengelo",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 84045,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Twentekanaal_Hengelo_2.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Twentekanaal_Hengelo_2.jpg",
+      "owner": "Tubantia",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hengelo_(Overijssel)",
+    "longitude": 6.7955256,
+    "latitude": 52.2523195
+  },
+  {
+    "name": "Heukelum",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 2179,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Stadhuis_Heukelum.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Stadhuis_Heukelum.JPG",
+      "owner": "Petervanmeurs",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Heukelum",
+    "longitude": 5.0750348,
+    "latitude": 51.8724724
+  },
+  {
+    "name": "Heusden",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 46689,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Heusden_Panorama_5.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Heusden_Panorama_5.JPG",
+      "owner": "arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Heusden_(stad)",
+    "longitude": 5.165507,
+    "latitude": 51.6888859
+  },
+  {
+    "name": "Hilversum",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 94595,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Gemeentehuishilversum.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Gemeentehuishilversum.jpg",
+      "owner": "Xavier66",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hilversum",
+    "longitude": 5.1719396,
+    "latitude": 52.2241375
+  },
+  {
+    "name": "Hindeloopen",
+    "aliases": ["Hylpen"],
+    "province": "Friesland",
+    "population": 863,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/20080504_Church_Hindeloopen_NL.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:20080504_Church_Hindeloopen_NL.jpg",
+      "owner": "Wutsje",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hindeloopen",
+    "longitude": 5.4004822,
+    "latitude": 52.9426184
+  },
+  {
+    "name": "Hoogeveen",
+    "aliases": [],
+    "province": "Drenthe",
+    "population": 40743,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Voormalig_kantongerecht_Hoogeveen.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Voormalig_kantongerecht_Hoogeveen.jpg",
+      "owner": "Gouwenaar",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hoogeveen_(plaats)",
+    "longitude": 6.4930815,
+    "latitude": 52.7264258
+  },
+  {
+    "name": "Hoogezand-Sappemeer",
+    "aliases": ["Hoogezand"],
+    "province": "Groningen",
+    "population": 22139,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Midden_Groningen-Sappemeer%2C_de_Noordbroeksterbrug_IMG_1099_2024-05-12_16.18.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Midden_Groningen-Sappemeer,_de_Noordbroeksterbrug_IMG_1099_2024-05-12_16.18.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hoogezand-Sappemeer",
+    "longitude": 6.7709176,
+    "latitude": 53.1597953
+  },
+  {
+    "name": "Hoorn",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 76202,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Hoorn_-_Hoofdtoren_-_52961046087_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Hoorn_-_Hoofdtoren_-_52961046087_(cropped).jpg",
+      "owner": "Frans Berkelaar",
+      "license": "CC BY 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hoorn_(Noord-Holland)",
+    "longitude": 5.0735802,
+    "latitude": 52.653272
+  },
+  {
+    "name": "Houten",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 47320,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Gemeentehuis_NS-station_Houten_nederland.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Gemeentehuis_NS-station_Houten_nederland.JPG",
+      "owner": "Antoine",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Houten",
+    "longitude": 5.1620637,
+    "latitude": 52.0271433
+  },
+  {
+    "name": "Huissen",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 19951,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Huissen_-_Langekerkstraat_10_-_Kerk_vanaf_Raadhuisplein.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Huissen_-_Langekerkstraat_10_-_Kerk_vanaf_Raadhuisplein.jpg",
+      "owner": "Electionworld",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Huissen",
+    "longitude": 5.9393769,
+    "latitude": 51.9383502
+  },
+  {
+    "name": "Hulst",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 10870,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/HulstKerk2.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:HulstKerk2.JPG",
+      "owner": "Vitaly Volkov",
+      "license": "CC BY 2.5"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Hulst_(stad)",
+    "longitude": 4.0877328,
+    "latitude": 51.3315936
+  },
+  {
+    "name": "IJlst",
+    "aliases": ["Drylts"],
+    "province": "Friesland",
+    "population": 2883,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/IJlst%2C_monumentaal_pand_foto1_2011-04-24_13.17.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:IJlst,_monumentaal_pand_foto1_2011-04-24_13.17.JPG",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/IJlst_(stad)",
+    "longitude": 5.6233237,
+    "latitude": 53.0101372
+  },
+  {
+    "name": "IJsselstein",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 33171,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/IJsselstein.IJssel.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:IJsselstein.IJssel.jpg",
+      "owner": "China_Crisis",
+      "license": "CC BY-SA 2.5"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/IJsselstein",
+    "longitude": 5.0286859,
+    "latitude": 52.0262053
+  },
+  {
+    "name": "Kampen",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 38952,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kerk_Kampen.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Kerk_Kampen.jpg",
+      "owner": "Hsf-toshiba",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Kampen_(stad)",
+    "longitude": 5.9033303,
+    "latitude": 52.5559484
+  },
+  {
+    "name": "Kerkrade",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 37952,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Overzicht_Markt_-_Kerkrade_-_20124734_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Overzicht_Markt_-_Kerkrade_-_20124734_-_RCE.jpg",
+      "owner": "Loek Tangel",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Kerkrade_(plaats)",
+    "longitude": 6.0593853,
+    "latitude": 50.8749089
+  },
+  {
+    "name": "Kessel",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 4185,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Kessel_Limburg_uitzicht.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Kessel_Limburg_uitzicht.jpg",
+      "owner": "GoaTheGod",
+      "license": "FAL"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Kessel_(Limburg)",
+    "longitude": 6.05734,
+    "latitude": 51.2912483
+  },
+  {
+    "name": "Klundert",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 5869,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Klundert_213.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Klundert_213.JPG",
+      "owner": "Arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Klundert",
+    "longitude": 4.5346644,
+    "latitude": 51.6627188
+  },
+  {
+    "name": "Landgraaf",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 36844,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Landgraaf-Streythagermolen-2.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Landgraaf-Streythagermolen-2.JPG",
+      "owner": "Romaine",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Landgraaf_(gemeente)",
+    "longitude": 6.0293103,
+    "latitude": 50.9024566
+  },
+  {
+    "name": "Laren",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 11547,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Day_216_-_panoramio_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_216_-_panoramio_(1).jpg",
+      "owner": "Janneman",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Laren_(Noord-Holland)",
+    "longitude": 5.2251925,
+    "latitude": 52.2565894
+  },
+  {
+    "name": "Leerdam",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 20438,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Leerdam_-_Zuidwal.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Leerdam_-_Zuidwal.jpg",
+      "owner": "T Houdijk",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Leerdam",
+    "longitude": 5.0924352,
+    "latitude": 51.8937356
+  },
+  {
+    "name": "Leeuwarden",
+    "aliases": ["Ljouwert"],
+    "province": "Friesland",
+    "population": 92685,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Nieuwestad-_Leeuwarden.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Nieuwestad-_Leeuwarden.jpg",
+      "owner": "Baykedevries",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Leeuwarden_(stad)",
+    "longitude": 5.7918548,
+    "latitude": 53.2005936
+  },
+  {
+    "name": "Leiden",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 130328,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Rapenburg_Leiden_Centrum.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Rapenburg_Leiden_Centrum.jpg",
+      "owner": "Roger Veringmeier",
+      "license": "CC BY 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Leiden",
+    "longitude": 4.4908843,
+    "latitude": 52.1594747
+  },
+  {
+    "name": "Lelystad",
+    "aliases": [],
+    "province": "Flevoland",
+    "population": 85781,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Lelystad-22-06-2014.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Lelystad-22-06-2014.jpg",
+      "owner": "Milliped",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Lelystad",
+    "longitude": 5.3610715,
+    "latitude": 52.536681
+  },
+  {
+    "name": "Maassluis",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 37125,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/MaasluisAerial01.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:MaasluisAerial01.jpg",
+      "owner": "Milliped",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Maassluis",
+    "longitude": 4.2440007,
+    "latitude": 51.9266671
+  },
+  {
+    "name": "Maastricht",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 126026,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Maastricht_sunset.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Maastricht_sunset.jpg",
+      "owner": "Bert Kaufmann",
+      "license": "CC BY 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Maastricht",
+    "longitude": 5.6969882,
+    "latitude": 50.8579855
+  },
+  {
+    "name": "Medemblik",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 8657,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Medemblik.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Medemblik.jpg",
+      "owner": "Dolfy",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Medemblik_(stad)",
+    "longitude": 5.1686228,
+    "latitude": 52.7907137
+  },
+  {
+    "name": "Meppel",
+    "aliases": [],
+    "province": "Drenthe",
+    "population": 32289,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Meppel%2C_de_Meppeler_toren_in_straatzicht_foto1_2011-05-21_11.58.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Meppel,_de_Meppeler_toren_in_straatzicht_foto1_2011-05-21_11.58.JPG",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Meppel",
+    "longitude": 6.197767,
+    "latitude": 52.6938237
+  },
+  {
+    "name": "Middelburg",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 43906,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Middelburg_Stadhuis_01.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Middelburg_Stadhuis_01.JPG",
+      "owner": "Ad Meskens",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Middelburg_(stad)",
+    "longitude": 3.6137371,
+    "latitude": 51.4996784
+  },
+  {
+    "name": "Monnickendam",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 9985,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Monnickendam%2C_Haven_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Monnickendam,_Haven_-_panoramio.jpg",
+      "owner": "archengigi",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Monnickendam",
+    "longitude": 5.0373214,
+    "latitude": 52.4570766
+  },
+  {
+    "name": "Montfoort",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 9845,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Montfoort_vogelvlucht_01.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Montfoort_vogelvlucht_01.JPG",
+      "owner": "Onderwijsgek",
+      "license": "CC BY-SA 2.5 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Montfoort",
+    "longitude": 4.9509051,
+    "latitude": 52.0449822
+  },
+  {
+    "name": "Montfort",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 3120,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Montfort_%28Roerdalen%29_Roerdriehoekmuseum.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Montfort_(Roerdalen)_Roerdriehoekmuseum.JPG",
+      "owner": "Havang(nl)",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Montfort_(Nederland)",
+    "longitude": 5.94533,
+    "latitude": 51.1294393
+  },
+  {
+    "name": "Muiden",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 5980,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Muiden_het_slot_en_de_Flevopolder.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Muiden_het_slot_en_de_Flevopolder.jpg",
+      "owner": "Jan Arkesteijn",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Muiden",
+    "longitude": 5.0722507,
+    "latitude": 52.3509477
+  },
+  {
+    "name": "Naarden",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 18520,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Grote_Kerk%2C_Naarden-Vesting.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Grote_Kerk,_Naarden-Vesting.jpg",
+      "owner": "VranzVanMaaren",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Naarden",
+    "longitude": 5.1633636,
+    "latitude": 52.2957628
+  },
+  {
+    "name": "Nieuwegein",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 68257,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Nieuwegein%2C_Netherlands_-_panoramio_-_Ben_Bender_%2825%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Nieuwegein,_Netherlands_-_panoramio_-_Ben_Bender_(25).jpg",
+      "owner": "Ben Bender",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Nieuwegein",
+    "longitude": 5.0929334,
+    "latitude": 52.0298704
+  },
+  {
+    "name": "Nieuwpoort",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 1463,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Nieuwpoort_binnenhaven.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Nieuwpoort_binnenhaven.JPG",
+      "owner": "Arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Nieuwpoort_(Zuid-Holland)",
+    "longitude": 4.868505,
+    "latitude": 51.9353893
+  },
+  {
+    "name": "Nieuwstadt",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 3281,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Nieuwstadt%2C_kerk_foto2_2011-03-20_10.24.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Nieuwstadt,_kerk_foto2_2011-03-20_10.24.JPG",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Nieuwstadt",
+    "longitude": 5.8607207,
+    "latitude": 51.0375846
+  },
+  {
+    "name": "Nijkerk",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 32104,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Aerial_Nijkerk_Grote_Kerk_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_Nijkerk_Grote_Kerk_1.jpg",
+      "owner": "User:.Koen",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Nijkerk_(stad)",
+    "longitude": 5.4781463,
+    "latitude": 52.2148536
+  },
+  {
+    "name": "Nijmegen",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 162473,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Waaggebouw_Boterwaag_Nijmegen_Renaissance_Grote_Markt_Waag.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Waaggebouw_Boterwaag_Nijmegen_Renaissance_Grote_Markt_Waag.jpg",
+      "owner": "Roger Veringmeier",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Nijmegen",
+    "longitude": 5.8389606,
+    "latitude": 51.8425749
+  },
+  {
+    "name": "Oldenzaal",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 32033,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Oude_stadhuis_Oldenzaal.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Oude_stadhuis_Oldenzaal.jpg",
+      "owner": "Simpleness",
+      "license": "CC BY-SA 2.5"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Oldenzaal",
+    "longitude": 6.9241615,
+    "latitude": 52.3116616
+  },
+  {
+    "name": "Oosterhout",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 58726,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Oosterhout_markt.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Oosterhout_markt.jpg",
+      "owner": "Arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Oosterhout_(Noord-Brabant)",
+    "longitude": 4.8630424,
+    "latitude": 51.6322376
+  },
+  {
+    "name": "Oss",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 60772,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Oss%2C_de_kerk_van_de_Onze_Lieve_Vrouw_Onbevlekt_Ontvangen_RM31870_foto3_2016-04-20_13.44.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Oss,_de_kerk_van_de_Onze_Lieve_Vrouw_Onbevlekt_Ontvangen_RM31870_foto3_2016-04-20_13.44.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Oss",
+    "longitude": 5.5320836,
+    "latitude": 51.7783542
+  },
+  {
+    "name": "Oudewater",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 8619,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Oudewater_13052012C.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Oudewater_13052012C.JPG",
+      "owner": "Onderwijsgek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Oudewater",
+    "longitude": 4.8701303,
+    "latitude": 52.022606
+  },
+  {
+    "name": "Purmerend",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 84186,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Koemarkt_Purmerend_in_de_zomer.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Koemarkt_Purmerend_in_de_zomer.JPG",
+      "owner": "Gemeente Purmerend",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Purmerend",
+    "longitude": 4.9614827,
+    "latitude": 52.5024789
+  },
+  {
+    "name": "Ravenstein",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 3177,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Ravenstein%2C_windmolen_de_Nijverheid_RM32362_foto4_2016-04-20_11.18.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Ravenstein,_windmolen_de_Nijverheid_RM32362_foto4_2016-04-20_11.18.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Ravenstein_(stad)",
+    "longitude": 5.6515519,
+    "latitude": 51.797005
+  },
+  {
+    "name": "Rhenen",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 15695,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Rhenen_9.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Rhenen_9.jpg",
+      "owner": "Pepijntje",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Rhenen",
+    "longitude": 5.5722196,
+    "latitude": 51.9608761
+  },
+  {
+    "name": "Rijssen",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 29344,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Rijssen_luchtfoto_7_september_2005.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Rijssen_luchtfoto_7_september_2005.jpg",
+      "owner": "Archangel12",
+      "license": "CC BY 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Rijssen",
+    "longitude": 6.5213004,
+    "latitude": 52.3080276
+  },
+  {
+    "name": "Roermond",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 44047,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Hochwasser_auf_Maas_und_Rur_in_Roermond.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Hochwasser_auf_Maas_und_Rur_in_Roermond.jpg",
+      "owner": "Grundig",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Roermond_(stad)",
+    "longitude": 5.9882649,
+    "latitude": 51.1933903
+  },
+  {
+    "name": "Roosendaal",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 67741,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Mark-Vlietkanaal_%28Roosendaal%29_-_Aerial_photograph.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Mark-Vlietkanaal_(Roosendaal)_-_Aerial_photograph.jpg",
+      "owner": "Michiel1972",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Roosendaal",
+    "longitude": 4.4561276,
+    "latitude": 51.5331484
+  },
+  {
+    "name": "Rotterdam",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 609023,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/A_view_of_Rotterdam%2C_taken_from_the_roof_of_the_Maassilo%2C_Rotterdam%2C_The_Netherlands.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:A_view_of_Rotterdam,_taken_from_the_roof_of_the_Maassilo,_Rotterdam,_The_Netherlands.jpg",
+      "owner": "Rob Oo",
+      "license": "CC BY 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Rotterdam",
+    "longitude": 4.47775,
+    "latitude": 51.9244424
+  },
+  {
+    "name": "Schagen",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 20098,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Jachthaven_in_Schagen.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Jachthaven_in_Schagen.JPG",
+      "owner": "H.P.Burger",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Schagen_(plaats)",
+    "longitude": 4.7413568,
+    "latitude": 52.7882213
+  },
+  {
+    "name": "Schiedam",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 81931,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Stadhuis_Schiedam.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Stadhuis_Schiedam.jpg",
+      "owner": "M.Minderhoud",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Schiedam",
+    "longitude": 4.4019149,
+    "latitude": 51.91718
+  },
+  {
+    "name": "Schin op Geul",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 1388,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Schin_op_geul_St._Mauritius.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Schin_op_geul_St._Mauritius.JPG",
+      "owner": "Marcelmulder68",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Schin_op_Geul",
+    "longitude": 5.8692069,
+    "latitude": 50.852459
+  },
+  {
+    "name": "Schoonhoven",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 13716,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Photo303-Holland-Schoonhoven.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Photo303-Holland-Schoonhoven.JPG",
+      "owner": "Goldenrowley",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Schoonhoven",
+    "longitude": 4.8516431,
+    "latitude": 51.9463984
+  },
+  {
+    "name": "Sint-Oedenrode",
+    "aliases": ["Rooi"],
+    "province": "Noord-Brabant",
+    "population": 18656,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Kerkplein%2C_Sint-Oedenrode_%28Sint-Martinuskerk%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Kerkplein,_Sint-Oedenrode_(Sint-Martinuskerk).jpg",
+      "owner": "FaceMePLS",
+      "license": "CC BY 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Sint-Oedenrode",
+    "longitude": 5.4610004,
+    "latitude": 51.5646434
+  },
+  {
+    "name": "Sittard",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 37645,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sittard_Panorama_4.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Sittard_Panorama_4.JPG",
+      "owner": "Arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Sittard",
+    "longitude": 5.8666627,
+    "latitude": 50.9974235
+  },
+  {
+    "name": "Sloten",
+    "aliases": ["Sleat"],
+    "province": "Friesland",
+    "population": 706,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Sloten_02.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Sloten_02.JPG",
+      "owner": "Udo Ockema",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Sloten_(Friesland)",
+    "longitude": 5.6453953,
+    "latitude": 52.8949914
+  },
+  {
+    "name": "Sluis",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 2392,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/0_Sluis_-_Stenen_Kade_%281%29.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:0_Sluis_-_Stenen_Kade_(1).JPG",
+      "owner": "Jean-Pol GRANDMONT",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Sluis_(stad)",
+    "longitude": 3.5166309,
+    "latitude": 51.3256629
+  },
+  {
+    "name": "Sneek",
+    "aliases": ["Snits"],
+    "province": "Friesland",
+    "population": 35425,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/20190529_Waterpoort1_Sneek.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:20190529_Waterpoort1_Sneek.jpg",
+      "owner": "Gouwenaar",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Sneek_(stad)",
+    "longitude": 5.6611029,
+    "latitude": 53.033548
+  },
+  {
+    "name": "Spijkenisse",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 74469,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Winkelcentrum_het_nieuwe_plein_in_Spijkenisse.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Winkelcentrum_het_nieuwe_plein_in_Spijkenisse.jpg",
+      "owner": "Peter van der Sluijs",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Spijkenisse",
+    "longitude": 4.3287681,
+    "latitude": 51.8464881
+  },
+  {
+    "name": "Stadskanaal",
+    "aliases": [],
+    "province": "Groningen",
+    "population": 19110,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Stadskanaal%2C_Niederlande%2C_Okt_2008.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Stadskanaal,_Niederlande,_Okt_2008.JPG",
+      "owner": "Maschinenjunge",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Stadskanaal_(plaats)",
+    "longitude": 7.0014349,
+    "latitude": 52.9962401
+  },
+  {
+    "name": "Staverden",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 20,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Staverden_kasteel.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Staverden_kasteel.jpg",
+      "owner": "arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Staverden",
+    "longitude": 5.7392053,
+    "latitude": 52.2990127
+  },
+  {
+    "name": "Stavoren",
+    "aliases": ["Starum"],
+    "province": "Friesland",
+    "population": 938,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/1208_Stavoren_10.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:1208_Stavoren_10.JPG",
+      "owner": "Microtoerisme",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Stavoren",
+    "longitude": 5.3602125,
+    "latitude": 52.8832689
+  },
+  {
+    "name": "Steenwijk",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 17592,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/20170604_13_Steenwijk_-_Markt.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:20170604_13_Steenwijk_-_Markt.jpg",
+      "owner": "Sjaak Kempe",
+      "license": "CC BY 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Steenwijk",
+    "longitude": 6.1210477,
+    "latitude": 52.7895502
+  },
+  {
+    "name": "Stein",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 10678,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Stein-003.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Stein-003.JPG",
+      "owner": "Pivos",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Stein_(Limburg)",
+    "longitude": 5.7606819,
+    "latitude": 50.9732145
+  },
+  {
+    "name": "Susteren",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 7915,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sint_Amelbergakerk_Susteren.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Sint_Amelbergakerk_Susteren.jpg",
+      "owner": "Gouwenaar",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Susteren",
+    "longitude": 5.8518902,
+    "latitude": 51.0654229
+  },
+  {
+    "name": "Tegelen",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 15355,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Tegelen1.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Tegelen1.JPG",
+      "owner": "Sindala",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Tegelen",
+    "longitude": 6.1362198,
+    "latitude": 51.3429314
+  },
+  {
+    "name": "Terneuzen",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 26736,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/TerneuzenStadhuis.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:TerneuzenStadhuis.JPG",
+      "owner": "Friedrich Tellberg",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Terneuzen_(stad)",
+    "longitude": 3.8422044,
+    "latitude": 51.298843
+  },
+  {
+    "name": "Thorn",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 2467,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Fahrr%C3%A4der_in_der_Daalstraat.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Fahrr%C3%A4der_in_der_Daalstraat.jpg",
+      "owner": "Alupus",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Thorn_(Limburg)",
+    "longitude": 5.8403012,
+    "latitude": 51.1611211
+  },
+  {
+    "name": "Tiel",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 42524,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tiel_waterpoort_C.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Tiel_waterpoort_C.jpg",
+      "owner": "Wouter Hagens",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Tiel",
+    "longitude": 5.4372681,
+    "latitude": 51.8874333
+  },
+  {
+    "name": "Tilburg",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 205832,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/De_heuvel_in_Tilburg.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:De_heuvel_in_Tilburg.jpg",
+      "owner": "Gijs Franken",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Tilburg",
+    "longitude": 5.0660616,
+    "latitude": 51.5856185
+  },
+  {
+    "name": "Ulft",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 10541,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/2008-02_antonius_kerk_ulft.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:2008-02_antonius_kerk_ulft.jpg",
+      "owner": "Ziko-C",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Ulft",
+    "longitude": 6.384324,
+    "latitude": 51.8909559
+  },
+  {
+    "name": "Utrecht",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 326940,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Utrecht_%2816295236803%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Utrecht_(16295236803).jpg",
+      "owner": "Sebastiaan ter Burg",
+      "license": "CC BY 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Utrecht_(stad)",
+    "longitude": 5.1215634,
+    "latitude": 52.0907006
+  },
+  {
+    "name": "Vaals",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 7699,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Vaals_uitzicht.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Vaals_uitzicht.JPG",
+      "owner": "Braggeleer",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Vaals_(plaats)",
+    "longitude": 5.9810696,
+    "latitude": 50.7781016
+  },
+  {
+    "name": "Valkenburg",
+    "aliases": ["Valkenburg aan de Geul"],
+    "province": "Limburg",
+    "population": 16481,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Kasteelru%C3%AFne_Valkenburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Kasteelru%C3%AFne_Valkenburg.jpg",
+      "owner": "Jos Jansen",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Valkenburg_aan_de_Geul",
+    "longitude": 5.8312518,
+    "latitude": 50.8647531
+  },
+  {
+    "name": "Valkenswaard",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 31920,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Valkenswaard_-_Markt_53_St._Nicolaaskerk.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Valkenswaard_-_Markt_53_St._Nicolaaskerk.JPG",
+      "owner": "John Scholte",
+      "license": "CC BY-SA 3.0 nl"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Valkenswaard_(plaats)",
+    "longitude": 5.4581819,
+    "latitude": 51.3202409
+  },
+  {
+    "name": "Veendam",
+    "aliases": [],
+    "province": "Groningen",
+    "population": 21907,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Veendam_105.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Veendam_105.JPG",
+      "owner": "Arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Veendam_(plaats)",
+    "longitude": 6.8773035,
+    "latitude": 53.0807517
+  },
+  {
+    "name": "Veenendaal",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 70779,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/RM36887_Markt_9B.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:RM36887_Markt_9B.JPG",
+      "owner": "HenkvD",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Veenendaal",
+    "longitude": 5.5539239,
+    "latitude": 52.0259814
+  },
+  {
+    "name": "Veere",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 1643,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Vista_de_Veere.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Vista_de_Veere.jpg",
+      "owner": "Paul 14",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Veere_(stad)",
+    "longitude": 3.5772694,
+    "latitude": 51.5564039
+  },
+  {
+    "name": "Veldhoven",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 47918,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Veldhoven%2C_kerk2_foto3_2008-09-28_12.13.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Veldhoven,_kerk2_foto3_2008-09-28_12.13.JPG",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Veldhoven",
+    "longitude": 5.4045572,
+    "latitude": 51.4190691
+  },
+  {
+    "name": "Velsen",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 70361,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Velserbroek-xndr.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Velserbroek-xndr.jpg",
+      "owner": "P199",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Velsen",
+    "longitude": 4.6038911,
+    "latitude": 52.4519103
+  },
+  {
+    "name": "Venlo",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 70021,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Stadhuis%2C_Venlo_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Stadhuis,_Venlo_-_panoramio.jpg",
+      "owner": "giggel",
+      "license": "CC BY 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Venlo_(stad)",
+    "longitude": 6.1511724,
+    "latitude": 51.3924489
+  },
+  {
+    "name": "Venray",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 29347,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/7a/VenrayMarketPlace.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://en.wikipedia.org/wiki/File:VenrayMarketPlace.jpg",
+      "owner": "Akandasamy",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Venray_(plaats)",
+    "longitude": 5.9589011,
+    "latitude": 51.5082754
+  },
+  {
+    "name": "Vianen",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 17079,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Vianen1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Vianen1.jpg",
+      "owner": "Ruben Alexander",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Vianen_(Utrecht)",
+    "longitude": 5.0939178,
+    "latitude": 51.9889916
+  },
+  {
+    "name": "Vlaardingen",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 77480,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Vlaardingen_Oude_haven.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Vlaardingen_Oude_haven.jpg",
+      "owner": "M.Minderhoud",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Vlaardingen",
+    "longitude": 4.3402639,
+    "latitude": 51.9097536
+  },
+  {
+    "name": "Vlissingen",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 34935,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Boulevard_Vlissingen.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Boulevard_Vlissingen.JPG",
+      "owner": "Vlissingen",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Vlissingen",
+    "longitude": 3.5697992,
+    "latitude": 51.4480929
+  },
+  {
+    "name": "Volendam",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 22842,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Volendam_harbour_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Volendam_harbour_-_panoramio.jpg",
+      "owner": "patano",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Volendam",
+    "longitude": 5.0682736,
+    "latitude": 52.4963759
+  },
+  {
+    "name": "Vollenhove",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 4388,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Netherlands%2C_Vollenhove_%2802%29%2C_harbour.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Netherlands,_Vollenhove_(02),_harbour.jpg",
+      "owner": "Vincent van Zeijst",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Vollenhove",
+    "longitude": 5.9491128,
+    "latitude": 52.6807305
+  },
+  {
+    "name": "Voorburg",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 43198,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Herenstraat%2C_Voorburg%2C_Netherlands%2C_in_winter.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Herenstraat,_Voorburg,_Netherlands,_in_winter.jpg",
+      "owner": "Vincent van Zeijst",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Voorburg_(Zuid-Holland)",
+    "longitude": 4.3558561,
+    "latitude": 52.0703201
+  },
+  {
+    "name": "Voorst",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 25569,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/De_Vecht.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:De_Vecht.jpg",
+      "owner": "Apdency",
+      "license": "CC0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Voorst_(Voorst)",
+    "longitude": 6.0862743,
+    "latitude": 52.2374112
+  },
+  {
+    "name": "Waalwijk",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 36436,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Overzicht_rechter_zijgevels_met_plein_en_rechts_de_Rooms_katholieke_kerk_Jan_de_Doper_-_Waalwijk_-_20350034_-_RCE.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Overzicht_rechter_zijgevels_met_plein_en_rechts_de_Rooms_katholieke_kerk_Jan_de_Doper_-_Waalwijk_-_20350034_-_RCE.jpg",
+      "owner": "A. J. van der Wal",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Waalwijk_(stad)",
+    "longitude": 5.0173079,
+    "latitude": 51.6873372
+  },
+  {
+    "name": "Wageningen",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 42779,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Wageningenmarketplace05150001.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Wageningenmarketplace05150001.JPG",
+      "owner": "Pimvantend",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Wageningen_(Nederland)",
+    "longitude": 5.6682981,
+    "latitude": 51.9685817
+  },
+  {
+    "name": "Weert",
+    "aliases": [],
+    "province": "Limburg",
+    "population": 46216,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Toren_Martinuskerk_-_Weert_%2829022792687%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Toren_Martinuskerk_-_Weert_(29022792687).jpg",
+      "owner": "FaceMePLS",
+      "license": "CC BY-SA 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Weert_(stad)",
+    "longitude": 5.7050797,
+    "latitude": 51.2355829
+  },
+  {
+    "name": "Weesp",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 26082,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/38644_%27t_Haantje_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:38644_%27t_Haantje_(cropped).jpg",
+      "owner": "Johan Bakker",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Weesp",
+    "longitude": 5.0420822,
+    "latitude": 52.3072593
+  },
+  {
+    "name": "Wijchen",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 37455,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Wijchen%2C_kasteel_Wijchen_RM39629_foto7_2016-04-20_10.08.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Wijchen,_kasteel_Wijchen_RM39629_foto7_2016-04-20_10.08.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Wijchen_(plaats)",
+    "longitude": 5.6960903,
+    "latitude": 51.8202529
+  },
+  {
+    "name": "Wijk bij Duurstede",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 17896,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/WijkBijDuurstede.air.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:WijkBijDuurstede.air.jpg",
+      "owner": "China Crisis",
+      "license": "CC BY 2.5"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Wijk_bij_Duurstede",
+    "longitude": 5.337435,
+    "latitude": 51.9751858
+  },
+  {
+    "name": "Willemstad",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 3053,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Willemstad_haven.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Willemstad_haven.jpg",
+      "owner": "Michiel1972",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Willemstad_(Noord-Brabant)",
+    "longitude": 4.4383531,
+    "latitude": 51.6923601
+  },
+  {
+    "name": "Winschoten",
+    "aliases": [],
+    "province": "Groningen",
+    "population": 18963,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Winschoten_Burgemeester_Sch%C3%B6nfeldplein.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Winschoten_Burgemeester_Sch%C3%B6nfeldplein.jpg",
+      "owner": "XPeria2Day",
+      "license": "CC BY-SA 2.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Winschoten",
+    "longitude": 7.0380717,
+    "latitude": 53.143001
+  },
+  {
+    "name": "Winterswijk",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 23118,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Molen_Venemansmolen_Winterswijk.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Molen_Venemansmolen_Winterswijk.jpg",
+      "owner": "Rasbak",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Winterswijk_(plaats)",
+    "longitude": 6.7378723,
+    "latitude": 51.9680214
+  },
+  {
+    "name": "Woerden",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 39636,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Woerden_luchtfoto.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Woerden_luchtfoto.jpg",
+      "owner": "Woerrden Marketing",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Woerden",
+    "longitude": 4.8832939,
+    "latitude": 52.0859261
+  },
+  {
+    "name": "Workum",
+    "aliases": ["Warkum"],
+    "province": "Friesland",
+    "population": 4680,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Workum%2C_de_Waag-Museum_Warkums_Erfskip_RM39461_IMG_2394_2018-04-18_15.26.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Workum,_de_Waag-Museum_Warkums_Erfskip_RM39461_IMG_2394_2018-04-18_15.26.jpg",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Workum",
+    "longitude": 5.4464091,
+    "latitude": 52.9778491
+  },
+  {
+    "name": "Woudrichem",
+    "aliases": [],
+    "province": "Noord-Brabant",
+    "population": 4606,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Woudrichem_Panorama_6.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Woudrichem_Panorama_6.JPG",
+      "owner": "arch",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Woudrichem_(plaats)",
+    "longitude": 5.0033435,
+    "latitude": 51.8168214
+  },
+  {
+    "name": "Zaandam",
+    "aliases": [],
+    "province": "Noord-Holland",
+    "population": 84461,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Zaanse_Schans_-_Windmills_3.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Zaanse_Schans_-_Windmills_3.jpg",
+      "owner": "Malis",
+      "license": "Public domain"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Zaandam",
+    "longitude": 4.8298607,
+    "latitude": 52.4424926
+  },
+  {
+    "name": "Zaltbommel",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 13512,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Zaltbommel_waterpoort.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Zaltbommel_waterpoort.jpg",
+      "owner": "Michiel1972",
+      "license": "CC BY-SA 4.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Zaltbommel_(stad)",
+    "longitude": 5.1898267,
+    "latitude": 51.782164
+  },
+  {
+    "name": "Zeist",
+    "aliases": [],
+    "province": "Utrecht",
+    "population": 55509,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Zeist_raadhuis_A.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Zeist_raadhuis_A.jpg",
+      "owner": "Wouter Hagens",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Zeist",
+    "longitude": 5.2276307,
+    "latitude": 52.0892832
+  },
+  {
+    "name": "Zevenaar",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 26678,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/2006-09-08_15.54_Lathum%2C_kerk.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:2006-09-08_15.54_Lathum,_kerk.JPG",
+      "owner": "Michielverbeek",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Zevenaar_(stad)",
+    "longitude": 6.0775263,
+    "latitude": 51.9279081
+  },
+  {
+    "name": "Zierikzee",
+    "aliases": [],
+    "province": "Zeeland",
+    "population": 12049,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Zierikzee_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Zierikzee_1.jpg",
+      "owner": "Yorg",
+      "license": "CC BY-SA 2.0 de"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Zierikzee",
+    "longitude": 3.9208365,
+    "latitude": 51.6497688
+  },
+  {
+    "name": "Zoetermeer",
+    "aliases": [],
+    "province": "Zuid-Holland",
+    "population": 130836,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Zoetermeer_Dobbe.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Zoetermeer_Dobbe.jpg",
+      "owner": "Caseman at nl.wikipedia",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Zoetermeer",
+    "longitude": 4.4901218,
+    "latitude": 52.0622531
+  },
+  {
+    "name": "Zutphen",
+    "aliases": [],
+    "province": "Gelderland",
+    "population": 41027,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Walburgkerk%2C_Zutphen.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Walburgkerk,_Zutphen.JPG",
+      "owner": "Reinoudkleijberg",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Zutphen_(stad)",
+    "longitude": 6.194772,
+    "latitude": 52.1396933
+  },
+  {
+    "name": "Zwolle",
+    "aliases": [],
+    "province": "Overijssel",
+    "population": 134147,
+    "populationSource": "CBS",
+    "populationDate": "2026",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Sassenstraat_1-15%2C_Zwolle.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Sassenstraat_1-15,_Zwolle.jpg",
+      "owner": "Ben Bender",
+      "license": "CC BY-SA 3.0"
+    },
+    "wikipedia": "https://nl.wikipedia.org/wiki/Zwolle",
+    "longitude": 6.0943765,
+    "latitude": 52.5089759
+  }
+]

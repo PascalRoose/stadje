@@ -1,0 +1,24 @@
+name: Agent instructions sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - CLAUDE.md
+      - .github/copilot-instructions.md
+      - scripts/sync-agent-instructions.mjs
+  pull_request:
+    paths:
+      - CLAUDE.md
+      - .github/copilot-instructions.md
+      - scripts/sync-agent-instructions.mjs
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node scripts/sync-agent-instructions.mjs --check
