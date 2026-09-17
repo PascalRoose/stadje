@@ -27,12 +27,35 @@ const POPULATION_ARROW: Record<PopulationDirection, string> = {
   equal: "",
 };
 
+// Shortened forms for the few province names long enough to routinely get truncated in the
+// narrow Provincie column — the other 9 provinces are short enough to show in full.
+const PROVINCE_ABBREVIATIONS: Record<string, string> = {
+  "Noord-Holland": "N-Holland",
+  "Zuid-Holland": "Z-Holland",
+  "Noord-Brabant": "N-Brabant",
+};
+
+function formatProvince(province: string): string {
+  return PROVINCE_ABBREVIATIONS[province] ?? province;
+}
+
 // Mockup screens 02, 04, 05: Stad / Provincie / Inwoners / Afstand, as a CSS grid (not a
 // <table>, matching the mockup). Each of the three hint cells is colored INDEPENDENTLY
 // (constitution Principle III, v2.0.0) — a guess is only ever green across all three when it's
 // the correct city.
-export function GuessTable({ guesses }: { guesses: GuessRow[] }) {
-  if (guesses.length === 0) return null;
+export function GuessTable({
+  guesses,
+  maxGuesses,
+}: {
+  guesses: GuessRow[];
+  /** When given, pads the table with dashed placeholder rows up to this many total rows
+   * (mockup screen 01 "Nieuw spel") — omit for a finished game (e.g. EndScreen), which never
+   * needs placeholders. */
+  maxGuesses?: number;
+}) {
+  if (guesses.length === 0 && maxGuesses === undefined) return null;
+
+  const placeholderCount = Math.max(0, (maxGuesses ?? 0) - guesses.length);
 
   return (
     <table className="guess-table">
@@ -52,7 +75,9 @@ export function GuessTable({ guesses }: { guesses: GuessRow[] }) {
           return (
             <tr className="guess-table__row" key={guess.cityId}>
               <td data-tier={correct ? "green" : undefined}>{city.name}</td>
-              <td data-tier={guess.province.tier}>{city.province}</td>
+              <td data-tier={guess.province.tier}>
+                {formatProvince(city.province)}
+              </td>
               <td data-tier={guess.population.tier}>
                 {formatPopulation(city.population)}{" "}
                 {POPULATION_ARROW[guess.population.direction]}
@@ -66,6 +91,15 @@ export function GuessTable({ guesses }: { guesses: GuessRow[] }) {
             </tr>
           );
         })}
+        {Array.from({ length: placeholderCount }, (_, i) => (
+          <tr
+            className="guess-table__row guess-table__row--placeholder"
+            // biome-ignore lint/suspicious/noArrayIndexKey: interchangeable empty slots, no stable identity
+            key={`placeholder-${i}`}
+          >
+            <td colSpan={4} className="guess-table__placeholder" />
+          </tr>
+        ))}
       </tbody>
     </table>
   );

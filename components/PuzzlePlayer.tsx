@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ConsentBanner } from "@/components/ConsentBanner";
 import { ConsentBannerBoundary } from "@/components/ConsentBannerBoundary";
@@ -8,6 +7,7 @@ import { EndScreen } from "@/components/EndScreen";
 import { GuessInput } from "@/components/GuessInput";
 import { GuessTable } from "@/components/GuessTable";
 import { NavMenu } from "@/components/NavMenu";
+import { PuzzlePhoto } from "@/components/PuzzlePhoto";
 import type { City, CityReveal } from "@/lib/cities";
 import { hasAnalyticsConsent, recordConsent } from "@/lib/consent";
 import type { GuessHints } from "@/lib/game/hints";
@@ -192,20 +192,15 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
       <>
         <Header date={date} />
         <div className="screen">
-          <div className="puzzle-photo">
-            <Image
-              src={puzzle.imageUrl}
-              alt="Onbekende Nederlandse stad"
-              fill
-              sizes="430px"
-            />
-            <p className="puzzle-photo__credit">
-              Foto: {puzzle.imageCredit.owner}
-            </p>
-          </div>
+          <PuzzlePhoto
+            imageUrl={puzzle.imageUrl}
+            credit={puzzle.imageCredit.owner}
+            alt="Onbekende Nederlandse stad"
+          />
           <p className="guess-count">
             {guesses.length}/{MAX_GUESSES}
           </p>
+          <p className="guess-prompt">Welk stadje is dit?</p>
           <GuessInput onSelect={handleGuess} disabled={submitting} />
           {error && (
             <p className="error" role="alert">
@@ -214,6 +209,7 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
           )}
           <GuessTable
             guesses={guesses.map((g) => ({ cityId: g.cityId, ...g.hints }))}
+            maxGuesses={MAX_GUESSES}
           />
           {!isArchive && (
             <p className="next-puzzle-note">Nieuw stadje om 00:00</p>
