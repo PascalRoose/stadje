@@ -82,17 +82,24 @@ export function emptyState(): LocalGameState {
   };
 }
 
-function hasLocalStorage(): boolean {
-  return (
-    typeof window !== "undefined" && typeof window.localStorage !== "undefined"
-  );
+// Merely reading window.localStorage (not just calling its methods) throws a SecurityError in
+// browsers that block cookies/site data entirely (e.g. Safari's "Block All Cookies"), so every
+// access — including this feature check — must be inside the try/catch.
+function getLocalStorage(): Storage | null {
+  try {
+    if (typeof window === "undefined") return null;
+    return window.localStorage;
+  } catch {
+    return null;
+  }
 }
 
 /** Reads the whole state blob, migrating/defaulting as needed. Safe to call on the server (SSR). */
 export function loadState(): LocalGameState {
-  if (!hasLocalStorage()) return emptyState();
+  const storage = getLocalStorage();
+  if (!storage) return emptyState();
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const raw = storage.getItem(STORAGE_KEY);
     if (!raw) return emptyState();
     const parsed = JSON.parse(raw) as LocalGameState;
     if (parsed.schemaVersion !== SCHEMA_VERSION) {
@@ -106,6 +113,12 @@ export function loadState(): LocalGameState {
 }
 
 export function saveState(state: LocalGameState): void {
-  if (!hasLocalStorage()) return;
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  const storage = getLocalStorage();
+  if (!storage) return;
+  try {
+    storage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch {
+    // Quota exceeded or storage blocked mid-session — game state is local-only and
+    // best-effort (constitution: no accounts), so silently drop the write.
+  }
 }

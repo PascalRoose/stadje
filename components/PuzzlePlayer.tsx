@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ConsentBanner } from "@/components/ConsentBanner";
+import { ConsentBannerBoundary } from "@/components/ConsentBannerBoundary";
 import { EndScreen } from "@/components/EndScreen";
 import { GuessInput } from "@/components/GuessInput";
 import { GuessTable } from "@/components/GuessTable";
@@ -159,6 +160,10 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
   }
 
   const display = deriveDisplayStats(state.stats);
+  // Consent only ever gates the optional analytics call (hasAnalyticsConsent below) — per US2
+  // (spec.md) the game itself "works exactly the same" whether or not a choice has been made, so
+  // this must never disable gameplay (a consent-blocking browser extension that removes the
+  // banner without ever calling onDecide would otherwise soft-lock the whole game).
   const needsConsent = !isArchive && state.consent === null;
 
   const content =
@@ -201,10 +206,7 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
           <p className="guess-count">
             {guesses.length}/{MAX_GUESSES}
           </p>
-          <GuessInput
-            onSelect={handleGuess}
-            disabled={submitting || needsConsent}
-          />
+          <GuessInput onSelect={handleGuess} disabled={submitting} />
           {error && (
             <p className="error" role="alert">
               {error}
@@ -224,13 +226,15 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
     <>
       {content}
       {needsConsent && (
-        <ConsentBanner
-          onDecide={(analyticsOptIn) => {
-            const nextState = recordConsent(state, analyticsOptIn);
-            saveState(nextState);
-            setState(nextState);
-          }}
-        />
+        <ConsentBannerBoundary>
+          <ConsentBanner
+            onDecide={(analyticsOptIn) => {
+              const nextState = recordConsent(state, analyticsOptIn);
+              saveState(nextState);
+              setState(nextState);
+            }}
+          />
+        </ConsentBannerBoundary>
       )}
     </>
   );
