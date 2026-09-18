@@ -1,4 +1,4 @@
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import type { NextRequest } from "next/server";
 import { getDb } from "@/db/client";
 import { worldStatsDaily } from "@/db/schema";
@@ -81,31 +81,37 @@ export async function POST(request: NextRequest) {
     return new Response("World stats are not configured", { status: 503 });
   }
 
-  const [existing] = await db
-    .select()
-    .from(worldStatsDaily)
-    .where(eq(worldStatsDaily.date, date));
-
-  const next = applyCompletion(rowToWorldStatsRow(date, existing), submission);
+  // Atomic insert-or-increment: no read-then-write, so concurrent same-day submissions can never
+  // lose an increment to each other (a prior version SELECTed, computed in JS, then wrote absolute
+  // values — a lost-update race under concurrency). The insert branch seeds a fresh row via the
+  // pure, already-tested `applyCompletion`; the conflict branch increments in the same statement
+  // Postgres uses to take the row lock, so every concurrent writer's increment is preserved.
+  const seed = applyCompletion(emptyWorldStatsRow(date), submission);
 
   await db
     .insert(worldStatsDaily)
     .values({
       date,
-      playersCount: next.playersCount,
-      correctCount: next.correctCount,
-      guessesSum: next.guessesSum,
-      fastestSolveGuesses: next.fastestSolveGuesses,
-      firstGuessTally: next.firstGuessTally,
+      playersCount: seed.playersCount,
+      correctCount: seed.correctCount,
+      guessesSum: seed.guessesSum,
+      fastestSolveGuesses: seed.fastestSolveGuesses,
+      firstGuessTally: seed.firstGuessTally,
     })
     .onConflictDoUpdate({
       target: worldStatsDaily.date,
       set: {
-        playersCount: next.playersCount,
-        correctCount: next.correctCount,
-        guessesSum: next.guessesSum,
-        fastestSolveGuesses: next.fastestSolveGuesses,
-        firstGuessTally: next.firstGuessTally,
+        playersCount: sql`${worldStatsDaily.playersCount} + 1`,
+        correctCount: sql`${worldStatsDaily.correctCount} + ${submission.won ? 1 : 0}`,
+        guessesSum: sql`${worldStatsDaily.guessesSum} + ${submission.won ? submission.guessCount : 0}`,
+        fastestSolveGuesses: submission.won
+          ? sql`LEAST(COALESCE(${worldStatsDaily.fastestSolveGuesses}, ${submission.guessCount}), ${submission.guessCount})`
+          : sql`${worldStatsDaily.fastestSolveGuesses}`,
+        firstGuessTally: sql`jsonb_set(
+          COALESCE(${worldStatsDaily.firstGuessTally}, '{}'::jsonb),
+          ARRAY[${submission.firstGuessCityId}::text],
+          (COALESCE((${worldStatsDaily.firstGuessTally} ->> ${submission.firstGuessCityId})::int, 0) + 1)::text::jsonb
+        )`,
       },
     });
 

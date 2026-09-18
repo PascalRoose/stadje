@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { type City, searchCities } from "@/lib/cities";
 
 interface GuessInputProps {
@@ -9,6 +9,10 @@ interface GuessInputProps {
   guessCount: number;
   maxGuesses: number;
 }
+
+// How long to wait after the last keystroke before searching — caps searchCities() to at most
+// one call per pause in typing instead of one per keystroke.
+const SEARCH_DEBOUNCE_MS = 175;
 
 // Mockup screens 01 & 02: "Typ een stad…" input with a grouped autocomplete dropdown.
 // FR-021: selecting a suggestion submits it immediately — no separate confirm step.
@@ -19,7 +23,18 @@ export function GuessInput({
   maxGuesses,
 }: GuessInputProps) {
   const [query, setQuery] = useState("");
-  const suggestions = query.trim() ? searchCities(query) : [];
+  const [suggestions, setSuggestions] = useState<City[]>([]);
+
+  useEffect(() => {
+    if (!query.trim()) {
+      setSuggestions([]);
+      return;
+    }
+    const timer = setTimeout(() => {
+      setSuggestions(searchCities(query));
+    }, SEARCH_DEBOUNCE_MS);
+    return () => clearTimeout(timer);
+  }, [query]);
 
   function handleSelect(city: City) {
     onSelect(city);
