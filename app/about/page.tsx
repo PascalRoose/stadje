@@ -4,20 +4,22 @@ import { useEffect, useState } from "react";
 import { PageHeader } from "@/components/PageHeader";
 import { getCityById } from "@/lib/cities";
 import type { WorldStatsDisplay } from "@/lib/game/world-stats";
+import { todayAmsterdam } from "@/lib/time";
 
 // Mockup screen 10 (Over Stadje) — US6.
 export default function AboutPage() {
   const [stats, setStats] = useState<WorldStatsDisplay | null>(null);
+  // Display-only — only picks which date's world stats to show, never which puzzle is served
+  // (that stays fully server-resolved). todayAmsterdam() is a pure, client-computable function,
+  // so no round trip to /api/puzzle is needed just to learn the date.
+  const [today] = useState(() => todayAmsterdam());
 
   useEffect(() => {
-    fetch("/api/puzzle")
+    fetch(`/api/world-stats?date=${today}`)
       .then((r) => r.json())
-      .then((puzzle: { date: string }) =>
-        fetch(`/api/world-stats?date=${puzzle.date}`).then((r) => r.json()),
-      )
       .then(setStats)
       .catch(() => setStats(null));
-  }, []);
+  }, [today]);
 
   return (
     <>

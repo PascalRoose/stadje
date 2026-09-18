@@ -68,6 +68,28 @@ function normalize(text: string): string {
     .toLowerCase();
 }
 
+interface NormalizedCity {
+  city: City;
+  normalizedName: string;
+  normalizedAliases: string[];
+}
+
+let normalizedCache: NormalizedCity[] | null = null;
+
+// Precomputes normalize() once per city/alias instead of on every searchCities()/resolveCity()
+// call — normalize() does Unicode NFKD + a regex pass, which is wasted work to repeat on every
+// keystroke of an autocomplete input. Lazily built and cached alongside `citiesCache`.
+function getNormalizedCities(): NormalizedCity[] {
+  if (!normalizedCache) {
+    normalizedCache = getCities().map((city) => ({
+      city,
+      normalizedName: normalize(city.name),
+      normalizedAliases: city.aliases.map(normalize),
+    }));
+  }
+  return normalizedCache;
+}
+
 /**
  * Substring match against display name and aliases (case/diacritic-insensitive), per FR-003.
  * A match via an alias still resolves to — and should be displayed as — the city's display name.
@@ -75,13 +97,14 @@ function normalize(text: string): string {
 export function searchCities(query: string, limit = 8): City[] {
   const q = normalize(query.trim());
   if (!q) return [];
-  return getCities()
+  return getNormalizedCities()
     .filter(
-      (c) =>
-        normalize(c.name).includes(q) ||
-        c.aliases.some((a) => normalize(a).includes(q)),
+      ({ normalizedName, normalizedAliases }) =>
+        normalizedName.includes(q) ||
+        normalizedAliases.some((a) => a.includes(q)),
     )
-    .slice(0, limit);
+    .slice(0, limit)
+    .map(({ city }) => city);
 }
 
 export interface CityReveal {
@@ -110,7 +133,8 @@ export function toRevealPayload(city: City): CityReveal {
 /** Resolves free text (display name or alias) to a known city, or undefined if none match. */
 export function resolveCity(query: string): City | undefined {
   const q = normalize(query.trim());
-  return getCities().find(
-    (c) => normalize(c.name) === q || c.aliases.some((a) => normalize(a) === q),
-  );
+  return getNormalizedCities().find(
+    ({ normalizedName, normalizedAliases }) =>
+      normalizedName === q || normalizedAliases.some((a) => a === q),
+  )?.city;
 }

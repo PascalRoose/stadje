@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { PageHeader } from "@/components/PageHeader";
 import { LAUNCH_DATE, puzzleNumber } from "@/lib/launch-date";
 import { type LocalGameState, loadState } from "@/lib/local-storage";
-import { formatHeaderDate } from "@/lib/time";
+import { formatHeaderDate, todayAmsterdam } from "@/lib/time";
 
 type Filter = "all" | "guessed" | "missed";
 
@@ -20,17 +20,17 @@ function addDays(date: string, days: number): string {
 // (and must never import) the server-only day→city schedule — see lib/game/selection.ts.
 export default function ArchivePage() {
   const [state, setState] = useState<LocalGameState | null>(null);
-  const [today, setToday] = useState<string | null>(null);
+  // Display-only — only picks which archive rows are labeled "today"; never which puzzle content
+  // is served (that stays fully server-resolved). todayAmsterdam() is a pure, client-computable
+  // function, so no round trip to /api/puzzle is needed just to learn the date.
+  const [today] = useState(() => todayAmsterdam());
   const [filter, setFilter] = useState<Filter>("all");
 
   useEffect(() => {
     setState(loadState());
-    fetch("/api/puzzle")
-      .then((r) => r.json())
-      .then((d: { date: string }) => setToday(d.date));
   }, []);
 
-  if (!state || !today) return <p className="loading">Laden…</p>;
+  if (!state) return <p className="loading">Laden…</p>;
 
   const days: string[] = [];
   for (let d = LAUNCH_DATE; d <= today; d = addDays(d, 1)) {
