@@ -88,6 +88,7 @@ describe("generateShareText", () => {
       guessCount: 3,
       guesses: [],
     });
-    expect(text.trimEnd().endsWith("https://stadje.vercel.app/")).toBe(true);
+    const lines = text.trimEnd().split("\n");
+    expect(lines[lines.length - 1]).toBe("https://stadje.vercel.app/");
   });
 });
