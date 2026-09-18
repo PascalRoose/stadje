@@ -64,14 +64,6 @@ export default function AboutPage() {
                   : "—"}
               </dd>
             </div>
-            <div>
-              <dt>Snelste oplossing vandaag</dt>
-              <dd>
-                {stats.fastestSolveGuesses !== null
-                  ? `${stats.fastestSolveGuesses} poging${stats.fastestSolveGuesses === 1 ? "" : "en"}`
-                  : "—"}
-              </dd>
-            </div>
           </dl>
         )}
 
