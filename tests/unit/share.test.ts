@@ -80,4 +80,15 @@ describe("generateShareText", () => {
     });
     expect(text).toContain("🟥🟧🟥\n🟩🟩🟩");
   });
+
+  it("ends with a link to the game", () => {
+    const text = generateShareText({
+      date: "2026-09-17",
+      status: "won",
+      guessCount: 3,
+      guesses: [],
+    });
+    const lines = text.trimEnd().split("\n");
+    expect(lines[lines.length - 1]).toBe("https://stadje.vercel.app/");
+  });
 });

@@ -7,7 +7,7 @@ import {
   waitFor,
 } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { EndScreen, type EndScreenStats } from "@/components/EndScreen";
+import { EndScreen } from "@/components/EndScreen";
 
 // next/image needs the full Next.js runtime (image optimization config, request context) that
 // isn't present under a plain jsdom test — swap it for a bare <img> so EndScreen can render.
@@ -25,13 +25,6 @@ vi.mock("next/image", () => ({
     // biome-ignore lint/a11y/useAltText: alt is passed through via {...rest} from real props
   }) => <img {...rest} />,
 }));
-
-const STATS: EndScreenStats = {
-  totalPlayed: 10,
-  percentCorrect: 80,
-  currentStreak: 3,
-  averageGuesses: 3.5,
-};
 
 const GUESSES = [
   {
@@ -62,7 +55,6 @@ function renderEndScreen(
         imageSource: "https://example.com",
         wikipedia: "https://nl.wikipedia.org/wiki/Rotterdam",
       }}
-      stats={STATS}
       {...overrides}
     />,
   );
@@ -88,14 +80,6 @@ describe("EndScreen", () => {
     renderEndScreen({ status: "lost" });
     expect(screen.getByText("HELAAS · 6 POGINGEN OP")).toBeTruthy();
     expect(screen.getByText("Het stadje van vandaag was")).toBeTruthy();
-  });
-
-  it("renders the stats grid", () => {
-    renderEndScreen();
-    expect(screen.getByText("10")).toBeTruthy();
-    expect(screen.getByText("80%")).toBeTruthy();
-    expect(screen.getByText("3")).toBeTruthy();
-    expect(screen.getByText("3.5")).toBeTruthy();
   });
 
   it("shares via the Web Share API when available", async () => {

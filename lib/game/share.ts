@@ -33,5 +33,5 @@ export function generateShareText({
         `${TIER_EMOJI[g.province.tier]}${TIER_EMOJI[g.population.tier]}${TIER_EMOJI[g.distance.tier]}`,
     )
     .join("\n");
-  return `Stadje ${date} — ${result}\n${grid}`;
+  return `Stadje ${date} — ${result}\n${grid}\nhttps://stadje.vercel.app/`;
 }

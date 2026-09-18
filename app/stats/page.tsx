@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { AttemptsDistribution } from "@/components/AttemptsDistribution";
 import { PageHeader } from "@/components/PageHeader";
 import { deriveDisplayStats } from "@/lib/game/streak";
 import { type LocalGameState, loadState } from "@/lib/local-storage";
@@ -60,20 +61,15 @@ export default function StatsPage() {
             <dd>{stats.currentStreak}</dd>
           </div>
           <div>
-            <dt>LANGSTE</dt>
+            <dt>LANGSTE REEKS</dt>
             <dd>{stats.longestStreak}</dd>
           </div>
         </dl>
 
         <h2>Verdeling pogingen</h2>
-        <ul className="stats-page__distribution">
-          {(["1", "2", "3", "4", "5", "6", "X"] as const).map((key) => (
-            <li key={key}>
-              <span>{key}</span>
-              <span>{stats.attemptsDistribution[key]}</span>
-            </li>
-          ))}
-        </ul>
+        <AttemptsDistribution
+          attemptsDistribution={stats.attemptsDistribution}
+        />
 
         {strongest && weakest && (
           <p className="stats-page__provinces">

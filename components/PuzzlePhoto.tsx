@@ -11,7 +11,8 @@ interface PuzzlePhotoProps {
 }
 
 // The thumbnail crops to a flat aspect ratio (globals.css), so the full photo isn't always
-// visible — the expand icon opens it uncropped, full screen, with click-to-zoom.
+// visible — tapping anywhere on it (the expand icon is just a visual affordance) opens it
+// uncropped, full screen, with click-to-zoom.
 export function PuzzlePhoto({ imageUrl, credit, alt }: PuzzlePhotoProps) {
   const [open, setOpen] = useState(false);
   const [zoomed, setZoomed] = useState(false);
@@ -35,18 +36,18 @@ export function PuzzlePhoto({ imageUrl, credit, alt }: PuzzlePhotoProps) {
 
   return (
     <>
-      <div className="puzzle-photo">
+      <button
+        type="button"
+        className="puzzle-photo"
+        onClick={() => setOpen(true)}
+        aria-label="Bekijk foto op volledig scherm"
+      >
         <Image src={imageUrl} alt={alt} fill sizes="430px" />
         <p className="puzzle-photo__credit">Foto: {credit}</p>
-        <button
-          type="button"
-          className="puzzle-photo__expand"
-          onClick={() => setOpen(true)}
-          aria-label="Bekijk foto op volledig scherm"
-        >
-          🔍
-        </button>
-      </div>
+        <span className="puzzle-photo__expand" aria-hidden="true">
+          ⤢
+        </span>
+      </button>
       {open &&
         createPortal(
           <div
