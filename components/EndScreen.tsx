@@ -7,13 +7,6 @@ import { PuzzlePhoto } from "@/components/PuzzlePhoto";
 import type { CityReveal } from "@/lib/cities";
 import { generateShareText } from "@/lib/game/share";
 
-export interface EndScreenStats {
-  totalPlayed: number;
-  percentCorrect: number;
-  currentStreak: number;
-  averageGuesses: number;
-}
-
 interface EndScreenProps {
   date: string;
   imageUrl: string;
@@ -22,10 +15,11 @@ interface EndScreenProps {
   guessCount: number;
   guesses: GuessRow[];
   reveal: CityReveal;
-  stats: EndScreenStats;
 }
 
-// Mockup screens 04 (Gewonnen + delen) & 05 (Verloren) — FR-008–FR-012.
+// Mockup screens 04 (Gewonnen + delen) & 05 (Verloren) — FR-008–FR-012. The stats grid that used
+// to live here now shows once, in ResultModal, right when the puzzle finishes — this screen is
+// the permanent "board" view for a completed puzzle.
 export function EndScreen({
   date,
   imageUrl,
@@ -34,7 +28,6 @@ export function EndScreen({
   guessCount,
   guesses,
   reveal,
-  stats,
 }: EndScreenProps) {
   const [shared, setShared] = useState(false);
 
@@ -92,25 +85,6 @@ export function EndScreen({
       </a>
 
       <GuessTable guesses={guesses} />
-
-      <dl className="end-screen__stats">
-        <div>
-          <dt>GESPEELD</dt>
-          <dd>{stats.totalPlayed}</dd>
-        </div>
-        <div>
-          <dt>GOED</dt>
-          <dd>{stats.percentCorrect}%</dd>
-        </div>
-        <div>
-          <dt>REEKS</dt>
-          <dd>{stats.currentStreak}</dd>
-        </div>
-        <div>
-          <dt>GEMIDD.</dt>
-          <dd>{stats.averageGuesses.toFixed(1)}</dd>
-        </div>
-      </dl>
 
       <button type="button" className="end-screen__share" onClick={handleShare}>
         {shared ? "Gekopieerd!" : "Deel resultaat"}

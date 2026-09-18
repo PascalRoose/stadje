@@ -22,10 +22,15 @@
   --dark-btn-bg: #191512;
   --dark-btn-fg: #f2ebdf;
 
-  --font-serif: var(--font-serif), Georgia, serif;
-  --font-sans:
+  /* Fallback stacks layered on next/font's injected --font-* variables (set on <html> in
+     layout.tsx). These must NOT reuse the --font-* names themselves — redefining a custom
+     property in terms of var(--same-name) is a self-reference cycle, which makes it (and every
+     shorthand `font: ... var(--font-x)` declaration using it) invalid at computed-value time, so
+     the browser silently falls back to its own default serif/16px instead. */
+  --font-serif-stack: var(--font-serif), Georgia, serif;
+  --font-sans-stack:
     var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: var(--font-mono), ui-monospace, Menlo, monospace;
+  --font-mono-stack: var(--font-mono), ui-monospace, Menlo, monospace;
 }
 
 * {
@@ -118,7 +123,7 @@ body {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans-stack);
   background: var(--canvas);
   color: var(--ink);
   height: 100dvh;
@@ -138,7 +143,7 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif-stack);
   font-weight: 600;
   margin: 0;
 }
@@ -200,7 +205,7 @@ button:active {
   grid-template-columns: 44px 1fr 44px;
   align-items: center;
   gap: 8px;
-  padding: 18px 18px 14px;
+  padding: 14px 18px 10px;
   border-bottom: 1px solid var(--border);
 }
 .app-header__title {
@@ -210,10 +215,10 @@ button:active {
   gap: 2px;
 }
 .app-header__title span:first-child {
-  font: 700 26px / 1 var(--font-serif);
+  font: 700 26px / 1 var(--font-serif-stack);
 }
 .app-header__date {
-  font: 500 10px / 1 var(--font-mono);
+  font: 500 10px / 1 var(--font-mono-stack);
   letter-spacing: 0.16em;
   color: var(--ink-60);
 }
@@ -244,11 +249,17 @@ button:active {
 .screen {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding: 18px 18px 32px;
+  gap: 10px;
+  padding: 14px 18px 20px;
   flex: 1;
   min-height: 0;
   overflow-y: auto;
+  /* Reserve the scrollbar's width whether or not it's actually showing — otherwise the puzzle
+     photo (width: 100% with an aspect-ratio, so its height tracks its width) visibly resizes
+     whenever navigating between a screen that needs to scroll and one that doesn't (e.g.
+     in-progress -> end screen), since the content-box width would otherwise shift by the
+     scrollbar's width. */
+  scrollbar-gutter: stable;
   animation: fade-in 0.25s ease both;
 }
 .screen h1 {
@@ -262,8 +273,19 @@ button:active {
 /* ---------- Puzzle photo ---------- */
 .puzzle-photo {
   position: relative;
+  display: block;
   width: 100%;
-  aspect-ratio: 2 / 1;
+  /* 3:2 matches how most source photos are actually framed, so the thumbnail crops far less of
+     them than the old flat 2:1 box did — the spacing trims below claw back the extra height. */
+  aspect-ratio: 3 / 2;
+  /* .screen is a flex column, and the in-progress vs. end screens have different amounts of
+     content — without this, a flex item's default flex-shrink:1 lets the browser shave a few px
+     off the photo's height (breaking its aspect-ratio) whenever the sibling content needs the
+     room, so the photo visibly resized between screens. .screen's overflow-y:auto handles any
+     resulting overflow via scrolling instead. */
+  flex-shrink: 0;
+  border: none;
+  padding: 0;
   border-radius: 12px;
   overflow: hidden;
   background: var(--photo-bg);
@@ -274,14 +296,14 @@ button:active {
 }
 .puzzle-photo__credit {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 8px;
+  left: 8px;
   margin: 0;
-  padding: 6px 10px;
-  font: 400 11px var(--font-sans);
+  padding: 4px 9px;
+  border-radius: 999px;
+  font: 400 11px var(--font-sans-stack);
   color: #fff;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  background: rgba(0, 0, 0, 0.45);
 }
 .puzzle-photo__expand {
   position: absolute;
@@ -365,16 +387,10 @@ button:active {
   justify-content: center;
 }
 
-.guess-count {
-  align-self: flex-end;
-  font: 700 12px / 1 var(--font-mono);
-  color: var(--ink-60);
-}
-
 .guess-prompt {
   margin: 0;
   text-align: center;
-  font: 600 15px var(--font-sans);
+  font: 600 15px var(--font-sans-stack);
   color: var(--ink);
 }
 
@@ -384,12 +400,21 @@ button:active {
 }
 .guess-input input {
   width: 100%;
-  padding: 13px 14px;
+  padding: 13px 46px 13px 14px;
   border: 1.5px solid var(--border-strong);
   border-radius: 12px;
-  font: 400 15px var(--font-sans);
+  font: 400 15px var(--font-sans-stack);
   background: var(--card);
   color: var(--ink);
+}
+.guess-input__count {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  font: 700 12px / 1 var(--font-mono-stack);
+  color: var(--ink-60);
+  pointer-events: none;
 }
 .guess-input input:focus {
   outline: none;
@@ -420,7 +445,7 @@ button:active {
   border-bottom: 1px solid var(--border);
   text-align: left;
   color: var(--ink);
-  font: 400 14px var(--font-sans);
+  font: 400 14px var(--font-sans-stack);
 }
 .guess-input__suggestions button:last-child {
   border-bottom: none;
@@ -449,7 +474,7 @@ button:active {
 .guess-table {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
   width: 100%;
   border-collapse: collapse;
 }
@@ -459,11 +484,11 @@ button:active {
 }
 .guess-table__row {
   display: grid;
-  grid-template-columns: 1.25fr 1.05fr 1fr 1fr;
+  grid-template-columns: 1.2fr 1.25fr 0.8fr 1.05fr;
   gap: 3px;
 }
 .guess-table__row--header th {
-  font: 500 6.5px var(--font-mono);
+  font: 500 9px var(--font-mono-stack);
   letter-spacing: 0;
   text-transform: uppercase;
   text-align: left;
@@ -479,12 +504,12 @@ button:active {
 .guess-table__row:not(.guess-table__row--header) td {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 34px;
   padding: 0 6px;
   border-radius: 9px;
   background: var(--card);
   border: 1px solid var(--border);
-  font: 500 11px var(--font-sans);
+  font: 500 11px var(--font-sans-stack);
   letter-spacing: -0.01em;
   color: var(--ink);
   overflow: hidden;
@@ -499,7 +524,7 @@ button:active {
   grid-template-columns: 1fr;
 }
 .guess-table__placeholder {
-  height: 40px;
+  height: 34px;
   border-radius: 9px;
   border: 1px dashed var(--border-strong);
 }
@@ -523,13 +548,6 @@ button:active {
   border-color: var(--red-bg);
   color: var(--red-fg);
 }
-.next-puzzle-note {
-  text-align: center;
-  font: 400 12px var(--font-serif);
-  font-style: italic;
-  color: var(--ink-60);
-}
-
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;
@@ -538,7 +556,7 @@ button:active {
   height: 46px;
   padding: 0 18px;
   border-radius: 11px;
-  font: 600 14px var(--font-sans);
+  font: 600 14px var(--font-sans-stack);
   border: none;
 }
 .btn-primary {
@@ -564,7 +582,7 @@ button:active {
   gap: 14px;
 }
 .end-screen h2 {
-  font: 700 13px var(--font-mono);
+  font: 700 13px var(--font-mono-stack);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -575,17 +593,17 @@ button:active {
   color: var(--red-bg);
 }
 .end-screen__lead {
-  font: 400 13px var(--font-serif);
+  font: 400 13px var(--font-serif-stack);
   font-style: italic;
   color: var(--ink-60);
 }
 .end-screen__answer {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans-stack);
   font-size: 14px;
   color: var(--ink-72);
 }
 .end-screen__answer strong {
-  font: 600 34px / 1.05 var(--font-serif);
+  font: 600 34px / 1.05 var(--font-serif-stack);
   display: block;
   color: var(--ink);
   margin-bottom: 4px;
@@ -601,41 +619,11 @@ button:active {
   border-radius: 11px;
   background: transparent;
   color: var(--ink);
-  font: 600 13px var(--font-sans);
+  font: 600 13px var(--font-sans-stack);
 }
 .end-screen__wikipedia:hover {
   background: var(--card);
   color: var(--ink);
-}
-
-.end-screen__stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  padding: 14px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-.end-screen__stats div {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  text-align: center;
-}
-.end-screen__stats dt {
-  order: 2;
-  font: 500 10px var(--font-mono);
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--ink-60);
-}
-.end-screen__stats dd {
-  order: 1;
-  margin: 0;
-  font: 600 19px var(--font-serif);
-}
-.end-screen__stats div:nth-child(3) dd {
-  color: var(--green-bg);
 }
 
 .end-screen__share {
@@ -644,7 +632,7 @@ button:active {
   border: none;
   background: var(--dark-btn-bg);
   color: var(--dark-btn-fg);
-  font: 600 14px var(--font-sans);
+  font: 600 14px var(--font-sans-stack);
 }
 .end-screen__share:hover {
   opacity: 0.9;
@@ -652,9 +640,127 @@ button:active {
 
 .countdown {
   text-align: center;
-  font: 400 12px var(--font-serif);
+  font: 400 12px var(--font-serif-stack);
   font-style: italic;
   color: var(--ink-60);
+}
+
+/* ---------- Generic centered modal shell (backdrop + card + close button) ---------- */
+/* Shared by every popup (ResultModal, HowItWorksModal, ...) — a page-specific component adds its
+   own class alongside .modal-card for status colors / content-specific spacing. */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  border: none;
+  padding: 0;
+  background: rgba(15, 12, 10, 0.55);
+  animation: fade-in 0.2s ease both;
+}
+.modal-card {
+  /* Centered via inset:0 + margin:auto on all sides, not a translate(-50%,-50%) transform — the
+     pop-in animation below also animates `transform` (scale), and an element's animated
+     transform fully replaces its static one rather than combining with it, which silently
+     dropped the centering offset once the animation finished. */
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  z-index: 41;
+  width: calc(100% - 32px);
+  max-width: 430px;
+  max-height: 82vh;
+  height: fit-content;
+  overflow-y: auto;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 22px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: pop-in 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.modal-card__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-card__close:hover {
+  background: var(--page);
+}
+
+/* ---------- Result modal (shown once, right when the final guess finishes the puzzle) ---------- */
+.result-modal h2 {
+  font: 700 13px var(--font-mono-stack);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-right: 36px;
+}
+.result-modal[data-status="won"] h2 {
+  color: var(--green-bg);
+}
+.result-modal[data-status="lost"] h2 {
+  color: var(--red-bg);
+}
+.result-modal__answer {
+  font-family: var(--font-sans-stack);
+  font-size: 14px;
+  color: var(--ink-72);
+  margin: 0;
+}
+.result-modal__answer strong {
+  font: 600 26px / 1.1 var(--font-serif-stack);
+  display: block;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.result-modal__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.result-modal__stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+}
+.result-modal__stats dt {
+  order: 2;
+  font: 500 10px var(--font-mono-stack);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+}
+.result-modal__stats dd {
+  order: 1;
+  margin: 0;
+  font: 600 19px var(--font-serif-stack);
+}
+.result-modal__stats div:nth-child(3) dd {
+  color: var(--green-bg);
+}
+.result-modal h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* ---------- How-it-works modal ---------- */
+.how-it-works-modal h2 {
+  padding-right: 36px;
 }
 
 /* ---------- Stat tiles (stats page, about page) ---------- */
@@ -677,7 +783,7 @@ button:active {
 .stats-page__grid dt,
 .about-page__world-stats dt {
   order: 2;
-  font: 500 10px var(--font-mono);
+  font: 500 10px var(--font-mono-stack);
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--ink-60);
@@ -686,7 +792,7 @@ button:active {
 .about-page__world-stats dd {
   order: 1;
   margin: 0;
-  font: 600 19px var(--font-serif);
+  font: 600 19px var(--font-serif-stack);
 }
 
 .stats-page__distribution {
@@ -695,14 +801,48 @@ button:active {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 .stats-page__distribution li {
   display: flex;
-  justify-content: space-between;
-  padding: 6px 4px;
-  border-bottom: 1px solid var(--border);
-  font-size: 13px;
+  align-items: center;
+  gap: 8px;
+  font: 500 12px var(--font-mono-stack);
+}
+.stats-page__distribution-label {
+  width: 12px;
+  flex-shrink: 0;
+  color: var(--ink-60);
+}
+.stats-page__distribution-track {
+  position: relative;
+  flex: 1;
+  height: 20px;
+  border-radius: 6px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.stats-page__distribution-bar {
+  /* Both <span>s (track and bar) are auto-blockified since they're flex items of the <li> — but
+     only the outer one; this inner span is a plain in-flow child of the (non-flex) track, so it
+     stays display:inline by default. `width`/`height` are no-ops on inline boxes, which is why
+     every bar silently rendered at zero size regardless of its width style. */
+  display: block;
+  height: 100%;
+  background: var(--green-bg);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+.stats-page__distribution-bar--miss {
+  background: var(--red-bg);
+}
+.stats-page__distribution-count {
+  width: 20px;
+  flex-shrink: 0;
+  text-align: right;
+  color: var(--ink);
+  font-weight: 600;
 }
 .stats-page__provinces {
   font-size: 13px;
@@ -719,7 +859,7 @@ button:active {
   border-radius: 999px;
   border: 1px solid var(--border-strong);
   background: var(--page);
-  font: 500 12px var(--font-sans);
+  font: 500 12px var(--font-sans-stack);
   color: var(--ink);
   transition:
     background-color 0.15s ease,
@@ -760,11 +900,11 @@ button:active {
   transform: translateY(0);
 }
 .archive-page__list li a > span:first-child {
-  font: 500 14px var(--font-sans);
+  font: 500 14px var(--font-sans-stack);
 }
 .archive-page__list li a > span:last-child {
   margin-left: auto;
-  font: 600 12px var(--font-mono);
+  font: 600 12px var(--font-mono-stack);
   padding: 4px 9px;
   border-radius: 999px;
   background: var(--border);
@@ -824,7 +964,7 @@ button:active {
   padding: 13px 14px;
   border-bottom: 1px solid var(--border);
   color: var(--ink);
-  font: 500 15px var(--font-sans);
+  font: 500 15px var(--font-sans-stack);
 }
 .nav-menu__links a::after {
   content: "→";
@@ -842,28 +982,17 @@ button:active {
   align-items: center;
   gap: 10px;
 }
-.nav-menu__credit {
-  margin: 0;
-  text-align: center;
-  font: 400 12px var(--font-serif);
-  font-style: italic;
+.nav-menu__legal {
+  display: flex;
+  gap: 14px;
+}
+.nav-menu__legal a {
+  font: 400 12px var(--font-sans-stack);
   color: var(--ink-60);
+  text-decoration: underline;
 }
-.nav-menu__github {
-  width: 100%;
-  gap: 8px;
-  background: #000;
-  border-color: #000;
-  color: #fff;
-}
-.nav-menu__github:hover {
-  background: #242424;
-  border-color: #242424;
-  color: #fff;
-}
-.nav-menu__github-icon {
-  width: 20px;
-  height: 20px;
+.nav-menu__legal a:hover {
+  color: var(--ink);
 }
 
 /* ---------- Consent banner: bottom sheet ---------- */
@@ -955,7 +1084,7 @@ button:active {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  font: 500 14px var(--font-sans);
+  font: 500 14px var(--font-sans-stack);
 }
 .settings-page__hint {
   color: var(--ink-60);
@@ -1000,8 +1129,50 @@ button:active {
   color: var(--ink-72);
   line-height: 1.5;
 }
+/* flex-direction is explicit (not left at its row default) because the cascade is resolved
+   per-property: `.how-it-works section` above sets flex-direction: column, and since this rule
+   is what that selector targets (a <section>), that column value applies unopposed unless a
+   matching rule declares flex-direction itself — higher specificity elsewhere doesn't help for
+   a property this rule never contests. */
+.how-it-works .how-it-works__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.how-it-works__row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.how-it-works__row p {
+  flex: 1;
+}
+.how-it-works__example {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 9px;
+  font: 500 12px var(--font-sans-stack);
+  letter-spacing: -0.01em;
+}
+.how-it-works__example[data-tier="green"] {
+  background: var(--green-bg);
+  color: var(--green-fg);
+}
+.how-it-works__example[data-tier="orange"] {
+  background: var(--orange-bg);
+  color: var(--orange-fg);
+}
+.how-it-works__example[data-tier="red"] {
+  background: var(--red-bg);
+  color: var(--red-fg);
+}
 .privacy-page__updated {
-  font: 500 10px var(--font-mono);
+  font: 500 10px var(--font-mono-stack);
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--ink-60);
@@ -1010,6 +1181,23 @@ button:active {
 .about-page__credit {
   font-size: 12px;
   color: var(--ink-60);
+}
+.about-page__github {
+  width: 100%;
+  height: 54px;
+  gap: 8px;
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+.about-page__github:hover {
+  background: #242424;
+  border-color: #242424;
+  color: #fff;
+}
+.about-page__github-icon {
+  width: 22px;
+  height: 22px;
 }
 
 /* High contrast (FR-020): stronger borders and darker text. */

@@ -33,3 +33,6 @@ Thumbs.db
 
 # Vercel
 .vercel
+
+# graphify (local knowledge-graph tool output/cache)
+graphify-out/

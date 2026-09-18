@@ -3,11 +3,14 @@
 import { useEffect, useState } from "react";
 import { ConsentBanner } from "@/components/ConsentBanner";
 import { ConsentBannerBoundary } from "@/components/ConsentBannerBoundary";
+import { Countdown } from "@/components/Countdown";
 import { EndScreen } from "@/components/EndScreen";
 import { GuessInput } from "@/components/GuessInput";
 import { GuessTable } from "@/components/GuessTable";
+import { HowItWorksModal } from "@/components/HowItWorksModal";
 import { NavMenu } from "@/components/NavMenu";
 import { PuzzlePhoto } from "@/components/PuzzlePhoto";
+import { ResultModal } from "@/components/ResultModal";
 import type { City, CityReveal } from "@/lib/cities";
 import { hasAnalyticsConsent, recordConsent } from "@/lib/consent";
 import type { GuessHints } from "@/lib/game/hints";
@@ -54,6 +57,9 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
   const [reveal, setReveal] = useState<CityReveal | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  // Only true right after the guess that ends the puzzle THIS session — never on a reload of an
+  // already-finished puzzle, so the result popup shows exactly once, "upon the final guess".
+  const [justFinished, setJustFinished] = useState(false);
 
   useEffect(() => {
     const url = dateProp ? `/api/puzzle?date=${dateProp}` : "/api/puzzle";
@@ -133,6 +139,7 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
       saveState(nextState);
       setState(nextState);
       if (revealData) setReveal(revealData);
+      if (won || lost) setJustFinished(true);
 
       // FR-024: only ever submitted when the player has explicitly opted in (FR-017); never
       // includes a player identifier — just the anonymous outcome for this date.
@@ -179,12 +186,6 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
             guessCount={guesses.length}
             guesses={guesses.map((g) => ({ cityId: g.cityId, ...g.hints }))}
             reveal={reveal}
-            stats={{
-              totalPlayed: state.stats.totalPlayed,
-              percentCorrect: display.percentCorrect,
-              currentStreak: state.stats.currentStreak,
-              averageGuesses: display.averageGuesses,
-            }}
           />
         </div>
       </>
@@ -197,11 +198,13 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
             credit={puzzle.imageCredit.owner}
             alt="Onbekende Nederlandse stad"
           />
-          <p className="guess-count">
-            {guesses.length}/{MAX_GUESSES}
-          </p>
-          <p className="guess-prompt">Welk stadje is dit?</p>
-          <GuessInput onSelect={handleGuess} disabled={submitting} />
+          <p className="guess-prompt">In welk stadje is dit?</p>
+          <GuessInput
+            onSelect={handleGuess}
+            disabled={submitting}
+            guessCount={guesses.length}
+            maxGuesses={MAX_GUESSES}
+          />
           {error && (
             <p className="error" role="alert">
               {error}
@@ -211,9 +214,7 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
             guesses={guesses.map((g) => ({ cityId: g.cityId, ...g.hints }))}
             maxGuesses={MAX_GUESSES}
           />
-          {!isArchive && (
-            <p className="next-puzzle-note">Nieuw stadje om 00:00</p>
-          )}
+          {!isArchive && <Countdown />}
         </div>
       </>
     );
@@ -232,20 +233,41 @@ export function PuzzlePlayer({ date: dateProp }: PuzzlePlayerProps) {
           />
         </ConsentBannerBoundary>
       )}
+      {justFinished && status !== "in-progress" && reveal && (
+        <ResultModal
+          status={status}
+          guessCount={guesses.length}
+          reveal={reveal}
+          stats={{
+            totalPlayed: state.stats.totalPlayed,
+            percentCorrect: display.percentCorrect,
+            currentStreak: state.stats.currentStreak,
+            averageGuesses: display.averageGuesses,
+          }}
+          attemptsDistribution={state.stats.attemptsDistribution}
+          onClose={() => setJustFinished(false)}
+        />
+      )}
     </>
   );
 }
 
 function Header({ date }: { date?: string }) {
+  const [howItWorksOpen, setHowItWorksOpen] = useState(false);
+
   return (
     <header className="app-header">
-      <a
-        href="/how-it-works"
+      <button
+        type="button"
         className="icon-button"
         aria-label="Hoe werkt Stadje?"
+        onClick={() => setHowItWorksOpen(true)}
       >
         ?
-      </a>
+      </button>
+      {howItWorksOpen && (
+        <HowItWorksModal onClose={() => setHowItWorksOpen(false)} />
+      )}
       <div className="app-header__title">
         <span>Stadje</span>
         {date && (
