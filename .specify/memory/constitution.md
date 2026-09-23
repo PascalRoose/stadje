@@ -1,26 +1,17 @@
 <!--
 Sync Impact Report
-- Version change: 1.0.0 → 2.0.0 (MAJOR — Principle III redefined; the game is now implemented and
-  live, so this is a real tracked amendment, not a pre-implementation refinement)
-- Modified principles:
-  - III. Fixed, Fair Hint Rules — redefined from one combined green/orange/red verdict per guess
-    (computed via OR-conditions across province/population/distance) to three INDEPENDENT tiers,
-    one per hint: province (green/red only, no orange), population (unchanged 10%/25% thresholds),
-    distance (green ONLY at exactly 0 km — i.e. the correct city — orange ≤25 km, red otherwise;
-    no other closeness makes distance green). Prompted by comparing the shipped UI against the
-    "Stadje UI mockups" design, which colors each hint cell independently rather than the whole
-    guess row one color.
-  - IV. Deterministic, Testable Game Logic — test-coverage line updated to call out the
-    distance-green-only-at-0km case explicitly.
+- Version change: 2.0.0 → 2.1.0 (MINOR — additive guidance, no principle redefined or removed:
+  Technology Stack & Hosting now explicitly permits Playwright for real-browser end-to-end
+  coverage, alongside Vitest which remains required for Principle IV's mandated coverage)
+- Modified principles: none
+- Modified sections:
+  - Technology Stack & Hosting — added a sentence permitting Playwright as additive e2e coverage
+    of Principle IV's mandated scenarios, on top of (not instead of) Vitest. See ADR 0014
+    (docs/adr/0014-e2e-testing-framework.md), which added `@playwright/test` and `e2e/*.spec.ts`
+    covering the win path, 6-guess loss path, duplicate-guess rejection, and hint-tier rendering
+    through a real browser against a production build.
 - Added/removed sections: none
-- Deferred items:
-  - Data completeness gap: the confirmed design shows ~612 Dutch cities/larger villages in the
-    finished game; `data/cities.json` currently has 178. Not a governance concern — tracked as a
-    Next Action for a future data task / `/speckit-specify`.
-  - Implementation follow-up (not deferred, done in the same pass): `lib/game/hints.ts`,
-    `lib/local-storage.ts`'s stored guess shape, `components/GuessTable.tsx`, all affected tests,
-    `specs/001-daily-city-puzzle/{data-model,contracts/api}.md`, and `specs/001-daily-city-puzzle/
-    tasks.md` all updated to match this amendment.
+- Deferred items: none
 - Note: this HTML comment is scratch material for human review and should be removed before the
   amended constitution is committed.
 -->
@@ -122,7 +113,9 @@ GitHub MUST be the system of record for source control, and CI/CD MUST run on Gi
 Actions) gating merges and deploys. The application MUST be built on Next.js, targeting Node.js 24
 only. Hosting MUST be on Vercel, including its Neon-backed Postgres integration for any
 persistent server-side storage the game needs. Automated tests (required by Principle IV) MUST be
-written with Vitest. pnpm MUST be the package manager (lockfile: `pnpm-lock.yaml`). Anonymous
+written with Vitest. Playwright MAY additionally be used for real-browser end-to-end coverage of
+Principle IV's mandated scenarios (see ADR 0014) — it is additive to, and never a substitute for,
+Vitest's required coverage. pnpm MUST be the package manager (lockfile: `pnpm-lock.yaml`). Anonymous
 visit analytics (Principle VI) MUST use Vercel Analytics rather than a separate third-party
 provider, gated behind the same opt-in consent action. Database access to Neon MUST go through
 Drizzle ORM rather than raw SQL or a separate query builder/ORM. Linting and formatting MUST use
@@ -176,4 +169,4 @@ removals or redefinitions, MINOR for new principles or materially expanded guida
 wording/clarification fixes. Every `/speckit-plan` run MUST verify its approach against the Core
 Principles above and note any justified deviation before proceeding to tasks.
 
-**Version**: 2.0.0 | **Ratified**: 2026-09-17 | **Last Amended**: 2026-09-17
+**Version**: 2.1.0 | **Ratified**: 2026-09-17 | **Last Amended**: 2026-09-23

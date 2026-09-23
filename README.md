@@ -27,6 +27,12 @@ the opt-in "world stats" feature — see [`.env.example`](.env.example).
 `pnpm install` also sets up local git hooks (via `simple-git-hooks`): a pre-commit hook runs
 Biome + typecheck on staged files, and a pre-push hook runs the test suite.
 
+`pnpm test:e2e` runs the [Playwright](https://playwright.dev) end-to-end suite against a real
+production build (see [ADR 0014](docs/adr/0014-e2e-testing-framework.md)) — one-time setup:
+`pnpm exec playwright install` to download a browser. It's not part of the pre-push hook (too slow
+for a local hook) or `pnpm install` (would slow down every install for contributors who never run
+it) — CI runs it on every PR.
+
 ## Scripts
 
 | Command | Does |
@@ -35,6 +41,7 @@ Biome + typecheck on staged files, and a pre-push hook runs the test suite.
 | `pnpm build` | Production build |
 | `pnpm test` | Run the test suite (Vitest) |
 | `pnpm test:coverage` | Run the test suite and generate coverage reports |
+| `pnpm test:e2e` | Run the end-to-end suite (Playwright) against a production build |
 | `pnpm biome check` | Lint + format check |
 | `pnpm typecheck` | Type check (`tsc --noEmit`) |
 | `pnpm db:generate` | Generate a Drizzle migration from `db/schema.ts` |
