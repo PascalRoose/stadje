@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="96" height="96" role="img" aria-label="Stadje logo">
+  <rect width="200" height="200" rx="44" fill="#A63F2E" />
+  <path
+    d="M50 170 V100 H62 V84 H74 V68 H86 V52 H94 V40 H106 V52 H114 V68 H126 V84 H138 V100 H150 V170 Z"
+    fill="#FFFCF6"
+  />
+  <rect x="94" y="60" width="12" height="14" rx="2" fill="#A63F2E" />
+  <rect x="78" y="108" width="18" height="18" rx="3" fill="#A63F2E" />
+  <rect x="104" y="108" width="18" height="18" rx="3" fill="#A63F2E" />
+  <rect x="78" y="134" width="18" height="18" rx="3" fill="#A63F2E" />
+  <rect x="104" y="134" width="18" height="18" rx="3" fill="#2F6B4A" />
+</svg>
