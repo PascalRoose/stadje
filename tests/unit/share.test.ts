@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { getCities } from "@/lib/cities";
 import type { Tier } from "@/lib/game/hints";
 import { generateShareText } from "@/lib/game/share";
+import { SITE_URL } from "@/lib/site";
 
 function row(province: Tier, population: Tier, distance: Tier) {
   return {
@@ -89,6 +90,6 @@ describe("generateShareText", () => {
       guesses: [],
     });
     const lines = text.trimEnd().split("\n");
-    expect(lines[lines.length - 1]).toBe("https://stadje.vercel.app/");
+    expect(lines[lines.length - 1]).toBe(`${SITE_URL}/`);
   });
 });

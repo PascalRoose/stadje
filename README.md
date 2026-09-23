@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/logo.svg" alt="Stadje logo" width="96" height="96">
+</p>
+
 # Stadje
 
 [![CI](https://github.com/PascalRoose/stadje/actions/workflows/ci.yml/badge.svg)](https://github.com/PascalRoose/stadje/actions/workflows/ci.yml)
