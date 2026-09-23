@@ -19,9 +19,9 @@ tooling exists in the repo at all today.
 
 ## Decision
 
-End-to-end tests are written with Playwright (`@playwright/test`), under `e2e/*.spec.ts` — a
-separate directory and file extension from Vitest's `tests/**/*.test.ts`, so the two runners never
-collide. Initial scope is exactly the four Principle IV-mandated scenarios (win, 6-guess loss,
+End-to-end tests are written with Playwright (`@playwright/test`), under `tests/e2e/*.spec.ts` — a
+separate subdirectory and file extension from Vitest's `tests/**/*.test.ts`, so the two runners
+never collide. Initial scope is exactly the four Principle IV-mandated scenarios (win, 6-guess loss,
 duplicate-guess rejection, hint-tier rendering), driven against a known, deterministic archive date
 (`data/puzzle-cycle.json` via `LAUNCH_DATE`) rather than mocking system time in a real browser.
 
