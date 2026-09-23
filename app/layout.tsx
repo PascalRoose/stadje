@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, JetBrains_Mono, Newsreader } from "next/font/google";
+import { AnalyticsGate } from "@/components/AnalyticsGate";
 import { HighContrastEffect } from "@/components/HighContrastEffect";
 import "./globals.css";
 
@@ -44,6 +45,7 @@ export default function RootLayout({
         <div id="app-frame">
           <div id="app-phone">{children}</div>
         </div>
+        <AnalyticsGate />
       </body>
     </html>
   );

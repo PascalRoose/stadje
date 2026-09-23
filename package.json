@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^1",
+    "@vercel/analytics": "^2.0.1",
     "drizzle-orm": "^0.45.2",
     "next": "16.3.5",
     "react": "19.3.0",
