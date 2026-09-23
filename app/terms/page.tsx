@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Voorwaarden",
+  description: "De spelregels en gebruiksvoorwaarden van Stadje.",
+  alternates: { canonical: "/terms" },
+};
 
 // Terms of Service — FR-025, linked from the same places as the Privacy Policy.
 export default function TermsPage() {
