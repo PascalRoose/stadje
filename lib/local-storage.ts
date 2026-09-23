@@ -117,6 +117,9 @@ export function saveState(state: LocalGameState): void {
   if (!storage) return;
   try {
     storage.setItem(STORAGE_KEY, JSON.stringify(state));
+    // Same-tab listeners (e.g. AnalyticsGate) can't rely on the native "storage" event, which
+    // only fires in other tabs — so broadcast in-tab too.
+    window.dispatchEvent(new Event("stadje:state-changed"));
   } catch {
     // Quota exceeded or storage blocked mid-session — game state is local-only and
     // best-effort (constitution: no accounts), so silently drop the write.
