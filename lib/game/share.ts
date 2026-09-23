@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/site";
 import type { GuessHints, Tier } from "./hints";
 
 const TIER_EMOJI: Record<Tier, string> = {
@@ -33,5 +34,5 @@ export function generateShareText({
         `${TIER_EMOJI[g.province.tier]}${TIER_EMOJI[g.population.tier]}${TIER_EMOJI[g.distance.tier]}`,
     )
     .join("\n");
-  return `Stadje ${date} — ${result}\n${grid}\nhttps://stadje.vercel.app/`;
+  return `Stadje ${date} — ${result}\n${grid}\n${SITE_URL}/`;
 }
