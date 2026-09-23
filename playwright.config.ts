@@ -5,7 +5,7 @@ import { defineConfig, devices } from "@playwright/test";
 // DOM attribute rendering, real navigation. Chromium only for now (cost/speed); other browsers
 // are available on demand locally via `--project=firefox` etc.
 export default defineConfig({
-  testDir: "./e2e",
+  testDir: "./tests/e2e",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
