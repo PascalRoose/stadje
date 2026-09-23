@@ -2,6 +2,7 @@
   "name": "stadje",
   "version": "0.1.0",
   "private": true,
+  "description": "Een dagelijks raadspel: raad de Nederlandse stad aan de hand van een foto.",
   "engines": {
     "node": "24.x"
   },

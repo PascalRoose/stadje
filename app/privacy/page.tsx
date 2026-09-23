@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Privacy",
+  description:
+    "Wat Stadje opslaat: gokken, reeks en statistieken blijven lokaal op je apparaat, geen account nodig.",
+  alternates: { canonical: "/privacy" },
+};
 
 // Mockup screen 12 (Privacy & voorwaarden) — FR-019, FR-022.
 export default function PrivacyPage() {
