@@ -18,8 +18,16 @@ export default defineConfig({
         "components/**/*.{ts,tsx}",
         "lib/**/*.ts",
         "scripts/**/*.ts",
+        "db/**/*.ts",
       ],
       exclude: ["**/*.d.ts", "**/node_modules/**", ".next/**"],
+      thresholds: {
+        perFile: false,
+        lines: 75,
+        statements: 75,
+        functions: 75,
+        branches: 85,
+      },
     },
   },
 });

@@ -1,0 +1,23 @@
+coverage:
+  status:
+    project:
+      default:
+        # Soft anti-regression: overall coverage can't drop by more than 1% in a PR. Vitest's own
+        # thresholds (vitest.config.ts) already fail CI hard below a fixed floor; this just catches
+        # a slow drift within that floor.
+        target: auto
+        threshold: 1%
+    patch:
+      default:
+        # New/changed lines in a PR must be well-tested — this is what actually prevents gaps like
+        # an untested route or lib module landing again, without requiring every pre-existing line
+        # to be retroactively covered first.
+        target: 80%
+
+ignore:
+  - "db/migrations/**" # generated SQL, not hand-written logic
+  - "**/*.config.ts"
+  - "app/layout.tsx" # trivial pass-through shell
+  - "app/**/loading.tsx"
+  - "app/**/error.tsx"
+  - "app/**/not-found.tsx"
